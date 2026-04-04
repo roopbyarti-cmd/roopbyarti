@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.roop-logo{
+    width: 130px;
+}
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+input[type="range"] {
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(to right, black, #444);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+}
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+@media screen and (max-width: 1279px) and (min-width:0) {
+  .cat-head{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.mobile-category a{
+  display: block;
+}
+.mob-nav a{
+  display: block;
+}
+}

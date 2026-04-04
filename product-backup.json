@@ -1,0 +1,1668 @@
+[
+    {
+        "_id": "69cf5a87941ca4398c5ed0ab",
+        "name": "Green Pearls Necklace",
+        "price": 800,
+        "image": "/products/116-PEARL-WHITE -GREEN.jpeg",
+        "category": "necklace",
+        "images": [
+            "/products/116-PEARL-WHITE -GREEN.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.794Z",
+        "updatedAt": "2026-04-03T06:13:27.794Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ac",
+        "name": "AD Mangalsutra Bracelet",
+        "price": 450,
+        "image": "/products/AD-mangalsutra-bracelet.jpg",
+        "category": "bracelet",
+        "images": [
+            "/products/AD-mangalsutra-bracelet.jpg",
+            "/products/AD-mangalsutra-bracelet-1.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.794Z",
+        "updatedAt": "2026-04-03T06:13:27.794Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ad",
+        "name": "Layered Rani Necklace",
+        "price": 1999,
+        "image": "/products/four-layer-rani-necklace.jpg",
+        "category": "necklace",
+        "images": [
+            "/products/four-layer-rani-necklace.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.794Z",
+        "updatedAt": "2026-04-03T06:13:27.794Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ae",
+        "name": "Blue Pearls Necklace",
+        "price": 800,
+        "image": "/products/120-PEARL-WHITE-BLUE.jpeg",
+        "category": "necklace",
+        "images": [
+            "/products/120-PEARL-WHITE-BLUE.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.794Z",
+        "updatedAt": "2026-04-03T06:13:27.794Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0af",
+        "name": "Golden Knot Earrings",
+        "price": 599,
+        "image": "/products/gold-knot-earrings.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/gold-knot-earrings.jpg",
+            "/products/Earrings.png"
+        ],
+        "isFeatured": true,
+        "stock": 5,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.794Z",
+        "updatedAt": "2026-04-03T06:13:27.794Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b0",
+        "name": "Golden Jhumki Combo",
+        "price": 699,
+        "image": "/products/Golden-jhumki-combo.png",
+        "category": "earrings",
+        "images": [
+            "/products/Golden-jhumki-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b1",
+        "name": "Golden Leaf Bracelet with Ring",
+        "price": 750,
+        "image": "/products/Bracelet.png",
+        "category": "bracelet",
+        "images": [
+            "/products/Bracelet.png",
+            "/products/bracelet3.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b3",
+        "name": "Black and Gold Pearls Bracelet",
+        "price": 350,
+        "image": "/products/mangalsutra-bracelet-big-pearl.jpg",
+        "category": "bracelet",
+        "images": [
+            "/products/mangalsutra-bracelet-big-pearl.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b4",
+        "name": "Black and Gold Pearls Bracelet",
+        "price": 350,
+        "image": "/products/mangalsutra-bracelet-small-pearl.jpg",
+        "category": "bracelet",
+        "images": [
+            "/products/mangalsutra-bracelet-small-pearl.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b5",
+        "name": "Gold Plated Necklace",
+        "price": 1500,
+        "image": "/products/traditional-necklace.jpg",
+        "category": "necklace",
+        "images": [
+            "/products/traditional-necklace.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b6",
+        "name": "White Bow Cluster",
+        "price": 250,
+        "image": "/products/Hair-access.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/Hair-access.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b7",
+        "name": "Rings Combo",
+        "price": 599,
+        "image": "/products/Rings.jpg",
+        "category": "rings",
+        "images": [
+            "/products/Rings.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b8",
+        "name": "Heart Pendant Set with Earrings",
+        "price": 550,
+        "image": "/products/heart-pendent-set-with-earrings1.jpg",
+        "category": "necklace",
+        "images": [
+            "/products/heart-pendent-set-with-earrings1.jpg",
+            "/products/heart-pendent-set-with-earrings.jpg",
+            "/products/heart-pendent-set-with-earrings2.jpg",
+            "/products/heart-pendent-set-with-earrings3.jpg",
+            "/products/heart-pendent-set-with-earrings4.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0b9",
+        "name": "Infinite Bracelet",
+        "price": 350,
+        "image": "/products/infinite-bracelet.jpg",
+        "category": "bracelet",
+        "images": [
+            "/products/infinite-bracelet.jpg",
+            "/products/infinite-bracelet1.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ba",
+        "name": "Kashmiri Earrings Pink",
+        "price": 550,
+        "image": "/products/kashmiri-earring-big.png",
+        "category": "earrings",
+        "images": [
+            "/products/kashmiri-earring-big.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0bb",
+        "name": "Kashmiri Earrings Combo",
+        "price": 550,
+        "image": "/products/kashmiri-earring-combo.png",
+        "category": "earrings",
+        "images": [
+            "/products/kashmiri-earring-combo.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0bc",
+        "name": "Flower Pendant Set with Earrings",
+        "price": 550,
+        "image": "/products/flower-pendent-set.png",
+        "category": "necklace",
+        "images": [
+            "/products/flower-pendent-set.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0bd",
+        "name": "Kashmiri Earrings Red",
+        "price": 550,
+        "image": "/products/kashmiri-earring3.png",
+        "category": "earrings",
+        "images": [
+            "/products/kashmiri-earring3.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0be",
+        "name": "Gold Plated Earrings",
+        "price": 550,
+        "image": "/products/Golden-earring-indian.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Golden-earring-indian.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0bf",
+        "name": "Scrunchies Combo",
+        "price": 550,
+        "image": "/products/hair-scrunchies-combo.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/hair-scrunchies-combo.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c0",
+        "name": "Scrunchies Combo",
+        "price": 550,
+        "image": "/products/hair-scrunchies-combo-1.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/hair-scrunchies-combo-1.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c1",
+        "name": "Scrunchie White",
+        "price": 150,
+        "image": "/products/hair-scrunchies-white.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/hair-scrunchies-white.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c2",
+        "name": "Scrunchie Pink",
+        "price": 150,
+        "image": "/products/hair-scrunchies-pink.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/hair-scrunchies-pink.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.795Z",
+        "updatedAt": "2026-04-03T06:13:27.795Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c3",
+        "name": "Scrunchie Black",
+        "price": 150,
+        "image": "/products/hair-scrunchies-black.jpg",
+        "category": "hair-accessories",
+        "images": [
+            "/products/hair-scrunchies-black.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c4",
+        "name": "Small Gold Plated Jhumki",
+        "price": 350,
+        "image": "/products/Golden-jhumki-small1.png",
+        "category": "earrings",
+        "images": [
+            "/products/Golden-jhumki-small1.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c5",
+        "name": "Small Gold Plated Jhumki",
+        "price": 350,
+        "image": "/products/Golden-jhumki-small2.png",
+        "category": "earrings",
+        "images": [
+            "/products/Golden-jhumki-small2.png"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c6",
+        "name": "Statement Earrings",
+        "price": 349,
+        "image": "/products/Statement-earring-rosegold.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Statement-earring-rosegold.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c7",
+        "name": "Statement Earrings",
+        "price": 349,
+        "image": "/products/Statement-earring-seacolor.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Statement-earring-seacolor.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c8",
+        "name": "Statement Drop Earrings",
+        "price": 349,
+        "image": "/products/Statement-earring-seacolor.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Statement-earring-seacolor.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0c9",
+        "name": "Black AD Drop Earrings",
+        "price": 345,
+        "image": "/products/AD-black-earring.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/AD-black-earring.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ca",
+        "name": "Blue AD Drop Earrings",
+        "price": 345,
+        "image": "/products/AD-blue-round-earring.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/AD-blue-round-earring.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0cb",
+        "name": "Blue AD Earrings",
+        "price": 345,
+        "image": "/products/AD-blue-round-earring.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/AD-blue-round-earring.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0cc",
+        "name": "AD Studs Earrings",
+        "price": 345,
+        "image": "/products/glassearringcircle.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/glassearringcircle.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0cd",
+        "name": "AD Studs Earrings",
+        "price": 345,
+        "image": "/products/glassearringsquare.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/glassearringsquare.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0ce",
+        "name": "Flower AD Studs Earrings",
+        "price": 345,
+        "image": "/products/glassflower-earring.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/glassflower-earring.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0cf",
+        "name": "Gold Plated Pearl Earrings",
+        "price": 450,
+        "image": "/products/gold-plated-med-earrings.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/gold-plated-med-earrings.jpg",
+            "/products/gold-plated-med-earrings1.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d0",
+        "name": "Shell Shape Earrings",
+        "price": 450,
+        "image": "/products/shellearring1.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/shellearring1.jpg",
+            "/products/shellearring2.jpg",
+            "/products/shellearring3.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d1",
+        "name": "Golden Jhumka",
+        "price": 399,
+        "image": "/products/Goldenmedjhumka.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Goldenmedjhumka.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d2",
+        "name": "Green Pearl Earring",
+        "price": 450,
+        "image": "/products/Greenpearlearrings.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Greenpearlearrings.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d3",
+        "name": "White Pearl Earring",
+        "price": 450,
+        "image": "/products/Whitepearlearrings.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/Whitepearlearrings.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d4",
+        "name": "Multicolour Jhumka",
+        "price": 450,
+        "image": "/products/multicolorjhumka1.jpg",
+        "category": "earrings",
+        "images": [
+            "/products/multicolorjhumka1.jpg",
+            "/products/multicolorjhumka2.jpg",
+            "/products/multicolorjhumka3.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf5a87941ca4398c5ed0d5",
+        "name": "Rose Gold Necklace",
+        "price": 450,
+        "image": "/products/RoseGoldnecklace.jpg",
+        "category": "necklace",
+        "images": [
+            "/products/RoseGoldnecklace.jpg"
+        ],
+        "isFeatured": false,
+        "stock": 1,
+        "__v": 0,
+        "createdAt": "2026-04-03T06:13:27.796Z",
+        "updatedAt": "2026-04-03T06:13:27.796Z"
+    },
+    {
+        "_id": "69cf60d5941ca4398c5ed0e3",
+        "name": "Black Flower Bracelet",
+        "price": 650,
+        "category": "bracelet",
+        "images": [
+            "/products/blackflowerbracelet.jpg",
+            "/products/blackflowerbracelet1.jpg",
+            "/products/blackflowerbracelet2.jpg",
+            "/products/blackflowerbracelet3.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T06:40:21.198Z",
+        "updatedAt": "2026-04-03T06:40:21.198Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf61f1941ca4398c5ed0e6",
+        "name": "Black and Gold Flower Bracelet",
+        "price": 650,
+        "category": "bracelet",
+        "images": [
+            "/products/blackgoldenflowerbracelet.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T06:45:05.304Z",
+        "updatedAt": "2026-04-03T06:45:05.304Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf670a941ca4398c5ed0f0",
+        "name": "Adjustable Rings Combo",
+        "price": 699,
+        "category": "rings",
+        "images": [
+            "/products/set-8-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:06:50.510Z",
+        "updatedAt": "2026-04-03T07:06:50.510Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf673a941ca4398c5ed0f3",
+        "name": "Gold/Sliver Rings Combo",
+        "price": 250,
+        "category": "rings",
+        "images": [
+            "/products/goldsliverring.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:07:38.787Z",
+        "updatedAt": "2026-04-03T07:07:38.787Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf675e941ca4398c5ed0f6",
+        "name": "Oxidized Rings Combo",
+        "price": 499,
+        "category": "rings",
+        "images": [
+            "/products/ring-combo-oxidized.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:08:14.588Z",
+        "updatedAt": "2026-04-03T07:08:14.588Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6798941ca4398c5ed0fa",
+        "name": "Black Stone Ring Combo",
+        "price": 250,
+        "category": "rings",
+        "images": [
+            "/products/ring-combo-gold.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:09:12.766Z",
+        "updatedAt": "2026-04-03T07:09:12.766Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf67c1941ca4398c5ed0fd",
+        "name": "Adjustable Rings Combo",
+        "price": 499,
+        "category": "rings",
+        "images": [
+            "/products/ring-combo-adjustable.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:09:53.469Z",
+        "updatedAt": "2026-04-03T07:09:53.469Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf67ea941ca4398c5ed100",
+        "name": "Cocktail Ring (Black)",
+        "price": 750,
+        "category": "rings",
+        "images": [
+            "/products/ring-black-round.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:10:34.144Z",
+        "updatedAt": "2026-04-03T07:10:34.144Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf680a941ca4398c5ed103",
+        "name": "Pink Ruby Ring",
+        "price": 450,
+        "category": "rings",
+        "images": [
+            "/products/pink-ruby-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:11:06.942Z",
+        "updatedAt": "2026-04-03T07:11:06.942Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6859941ca4398c5ed106",
+        "name": "Oxidized Rings Combo",
+        "price": 399,
+        "category": "rings",
+        "images": [
+            "/products/oxi-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:12:25.050Z",
+        "updatedAt": "2026-04-03T07:12:25.050Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf687a941ca4398c5ed109",
+        "name": "Gold Plated Ring Combo",
+        "price": 299,
+        "category": "rings",
+        "images": [
+            "/products/golden-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:12:58.014Z",
+        "updatedAt": "2026-04-03T07:12:58.014Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf689f941ca4398c5ed10c",
+        "name": "Gold/Sliver Stone Rings",
+        "price": 199,
+        "category": "rings",
+        "images": [
+            "/products/gold-silverston-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:13:35.397Z",
+        "updatedAt": "2026-04-03T07:13:35.397Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf68a3941ca4398c5ed10f",
+        "name": "",
+        "price": 0,
+        "category": "",
+        "images": [
+            ""
+        ],
+        "isFeatured": true,
+        "stock": 0,
+        "createdAt": "2026-04-03T07:13:39.162Z",
+        "updatedAt": "2026-04-03T07:13:39.162Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf68c6941ca4398c5ed112",
+        "name": "Gold Plated Rings Combo (15)",
+        "price": 1399,
+        "category": "rings",
+        "images": [
+            "/products/gold-plated-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:14:14.230Z",
+        "updatedAt": "2026-04-03T07:14:14.230Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf690d941ca4398c5ed116",
+        "name": "Cute Cocktail Ring ",
+        "price": 750,
+        "category": "rings",
+        "images": [
+            "/products/gold-cocktail-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:15:25.698Z",
+        "updatedAt": "2026-04-03T07:15:25.698Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6932941ca4398c5ed119",
+        "name": "Flower Cocktail Ring",
+        "price": 750,
+        "category": "rings",
+        "images": [
+            "/products/flower-cocktail-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:16:02.498Z",
+        "updatedAt": "2026-04-03T07:16:02.498Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6959941ca4398c5ed11c",
+        "name": "Crystal Flower Cocktail Ring",
+        "price": 999,
+        "category": "rings",
+        "images": [
+            "/products/crystalflower-stone-gold-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:16:41.634Z",
+        "updatedAt": "2026-04-03T07:16:41.634Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf697b941ca4398c5ed11f",
+        "name": "Rose Gold Cocktail Ring",
+        "price": 650,
+        "category": "rings",
+        "images": [
+            "/products/crystal-rosegold-flower-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:17:15.612Z",
+        "updatedAt": "2026-04-03T07:17:15.612Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf69ae941ca4398c5ed122",
+        "name": "Crystal Yellow Stone Ring ",
+        "price": 850,
+        "category": "rings",
+        "images": [
+            "/products/crystal-gold-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:18:06.965Z",
+        "updatedAt": "2026-04-03T07:18:06.965Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf69fa941ca4398c5ed129",
+        "name": "Crystal Green Stone Ring",
+        "price": 850,
+        "category": "rings",
+        "images": [
+            "/products/crystal-gold-ring-green.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:19:22.571Z",
+        "updatedAt": "2026-04-03T07:19:22.571Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6a2f941ca4398c5ed12c",
+        "name": "Black Crystal Flower Ring",
+        "price": 550,
+        "category": "rings",
+        "images": [
+            "/products/crystal-Black-flower-gold-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:20:15.468Z",
+        "updatedAt": "2026-04-03T07:20:15.468Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6a4c941ca4398c5ed12f",
+        "name": "Flower Ring",
+        "price": 450,
+        "category": "rings",
+        "images": [
+            "/products/cocktail-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:20:44.947Z",
+        "updatedAt": "2026-04-03T07:20:44.947Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6a83941ca4398c5ed133",
+        "name": "Blue Stone AD Cocktail Ring",
+        "price": 1199,
+        "category": "rings",
+        "images": [
+            "/products/cocktail-ring-blue.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:21:39.790Z",
+        "updatedAt": "2026-04-03T07:21:39.790Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6aaa941ca4398c5ed136",
+        "name": "Ring Box 36 Rings",
+        "price": 1599,
+        "category": "rings",
+        "images": [
+            "/products/box-of-rings.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:22:18.590Z",
+        "updatedAt": "2026-04-03T07:22:18.590Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6af2941ca4398c5ed139",
+        "name": "Stone Ring",
+        "price": 150,
+        "category": "rings",
+        "images": [
+            "/products/blackwhitestone.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:23:30.580Z",
+        "updatedAt": "2026-04-03T07:23:30.580Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6b19941ca4398c5ed13c",
+        "name": "Statement Rings Combo",
+        "price": 699,
+        "category": "rings",
+        "images": [
+            "/products/10-set-ring-combo.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:24:09.051Z",
+        "updatedAt": "2026-04-03T07:24:09.051Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6b38941ca4398c5ed13f",
+        "name": "AD Cocktail Ring",
+        "price": 550,
+        "category": "rings",
+        "images": [
+            "/products/sliver-stone-ring.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:24:40.703Z",
+        "updatedAt": "2026-04-03T07:24:40.703Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6b64941ca4398c5ed142",
+        "name": "Classic Golden Hoops",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/goldenhoops.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T07:25:24.321Z",
+        "updatedAt": "2026-04-03T07:25:24.321Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6c39941ca4398c5ed147",
+        "name": "Hasli Necklace",
+        "price": 899,
+        "category": "necklace",
+        "images": [
+            "/products/hasli.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:28:57.901Z",
+        "updatedAt": "2026-04-03T07:28:57.901Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6c96941ca4398c5ed14d",
+        "name": "Glow Leaf Necklace",
+        "price": 899,
+        "category": "necklace",
+        "images": [
+            "/products/chain2.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T07:30:30.754Z",
+        "updatedAt": "2026-04-03T07:30:30.754Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6cc9941ca4398c5ed151",
+        "name": "Square Tag Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/chain3.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:31:21.671Z",
+        "updatedAt": "2026-04-03T07:31:21.671Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6cf1941ca4398c5ed154",
+        "name": "Heart Glow Necklace",
+        "price": 750,
+        "category": "necklace",
+        "images": [
+            "/products/chain4.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T07:32:01.657Z",
+        "updatedAt": "2026-04-03T07:32:01.657Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6d11941ca4398c5ed157",
+        "name": "Tag Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/chain5.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T07:32:33.151Z",
+        "updatedAt": "2026-04-03T07:32:33.151Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6d38941ca4398c5ed15a",
+        "name": "Heart Layer Necklace",
+        "price": 849,
+        "category": "necklace",
+        "images": [
+            "/products/layeredchain.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:33:12.034Z",
+        "updatedAt": "2026-04-03T07:33:12.034Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6d67941ca4398c5ed15e",
+        "name": "Tag layer Necklace",
+        "price": 849,
+        "category": "necklace",
+        "images": [
+            "/products/layeredchain1.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:33:59.883Z",
+        "updatedAt": "2026-04-03T07:33:59.883Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6dab941ca4398c5ed166",
+        "name": "Love Necklace",
+        "price": 750,
+        "category": "necklace",
+        "images": [
+            "/products/chain6.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:35:07.104Z",
+        "updatedAt": "2026-04-03T07:35:07.104Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6dd5941ca4398c5ed169",
+        "name": "Water Drop Necklace",
+        "price": 1050,
+        "category": "necklace",
+        "images": [
+            "/products/chain7.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:35:49.515Z",
+        "updatedAt": "2026-04-03T07:35:49.515Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6e4d941ca4398c5ed16c",
+        "name": "Bangle Bracelet",
+        "price": 1000,
+        "category": "bracelet",
+        "images": [
+            "/products/bracelet1.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:37:49.967Z",
+        "updatedAt": "2026-04-03T07:37:49.967Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6e92941ca4398c5ed16f",
+        "name": "Rose Gold Glow Bracelet",
+        "price": 899,
+        "category": "bracelet",
+        "images": [
+            "/products/bracelet2.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:38:58.905Z",
+        "updatedAt": "2026-04-03T07:38:58.905Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6ebb941ca4398c5ed172",
+        "name": "Ring Loop Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/chain1.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:39:39.702Z",
+        "updatedAt": "2026-04-03T07:39:39.702Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6f0e941ca4398c5ed175",
+        "name": "Classic Hoops",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/hoops.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:41:02.957Z",
+        "updatedAt": "2026-04-03T07:41:02.957Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6f3d941ca4398c5ed179",
+        "name": "White Flower bracelet",
+        "price": 650,
+        "category": "bracelet",
+        "images": [
+            "/products/whiteflowerbracelete.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:41:49.484Z",
+        "updatedAt": "2026-04-03T07:41:49.484Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf6fa0941ca4398c5ed185",
+        "name": "Pearl Bangle (2x8) Size",
+        "price": 999,
+        "category": "bracelet",
+        "images": [
+            "/products/pearlbangal.webp"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:43:28.034Z",
+        "updatedAt": "2026-04-03T07:43:28.034Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf701c941ca4398c5ed189",
+        "name": "Floral Gold Earrings",
+        "price": 649,
+        "category": "earrings",
+        "images": [
+            "/products/flowerwesternearring.png"
+        ],
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-03T07:45:32.646Z",
+        "updatedAt": "2026-04-03T07:45:32.646Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf707c941ca4398c5ed18c",
+        "name": "Gold Necklace with Earrings",
+        "price": 1500,
+        "category": "necklace",
+        "images": [
+            "/products/goldenset.jpg",
+            "/products/goldenset1.jpg",
+            "/products/goldenset2.jpg",
+            "/products/goldenset3.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:47:08.319Z",
+        "updatedAt": "2026-04-03T07:47:08.319Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf710c941ca4398c5ed190",
+        "name": "Gold-Plated Antique Necklace",
+        "price": 599,
+        "category": "necklace",
+        "images": [
+            "/products/stonesetwhite.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:49:32.885Z",
+        "updatedAt": "2026-04-03T07:49:32.885Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf712b941ca4398c5ed193",
+        "name": "Gold-Plated Antique Necklace",
+        "price": 599,
+        "category": "necklace",
+        "images": [
+            "/products/stonsetgreen.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:50:03.968Z",
+        "updatedAt": "2026-04-03T07:50:03.968Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf7147941ca4398c5ed196",
+        "name": "Necklace Combo",
+        "price": 1050,
+        "category": "necklace",
+        "images": [
+            "/products/stonsetcombo.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T07:50:31.549Z",
+        "updatedAt": "2026-04-03T07:50:31.549Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf73c4941ca4398c5ed1a1",
+        "name": "Pendent Jewellery Set",
+        "price": 1199,
+        "category": "necklace",
+        "images": [
+            "/products/gold-plated-jwelleryset.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T08:01:08.241Z",
+        "updatedAt": "2026-04-03T08:01:08.241Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf825e941ca4398c5ed1a7",
+        "name": "Infinite Necklace",
+        "price": 449,
+        "category": "necklace",
+        "images": [
+            "/products/infinite-chain.jpg",
+            "/products/infinite-chain1.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:03:26.732Z",
+        "updatedAt": "2026-04-03T09:03:26.732Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf82a3941ca4398c5ed1ac",
+        "name": "Kashmiri Green Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/kashmiri-green-earrings.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:04:35.126Z",
+        "updatedAt": "2026-04-03T09:04:35.126Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8380941ca4398c5ed1af",
+        "name": "Square Studs Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/squarestuds.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:08:16.112Z",
+        "updatedAt": "2026-04-03T09:08:16.112Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf83a6941ca4398c5ed1b2",
+        "name": "Crushed Studs",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/crushedEarrings.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:08:54.135Z",
+        "updatedAt": "2026-04-03T09:08:54.135Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8901941ca4398c5ed1b8",
+        "name": "Sleek Simplicity Golden Bracelet",
+        "price": 1000,
+        "category": "bracelet",
+        "images": [
+            "/products/SleekSimplicityGoldenBracelet.png"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T09:31:45.993Z",
+        "updatedAt": "2026-04-03T09:31:45.993Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8934941ca4398c5ed1bc",
+        "name": "Shell Long Earrings",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/Shell-long.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-03T09:32:36.418Z",
+        "updatedAt": "2026-04-03T09:32:36.418Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8979941ca4398c5ed1c0",
+        "name": "Pacheli Bangles",
+        "price": 899,
+        "category": "bracelet",
+        "images": [
+            "/products/pachelibangles1.jpeg",
+            "/products/pachelibangles.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T09:33:45.048Z",
+        "updatedAt": "2026-04-03T09:33:45.048Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf89e1941ca4398c5ed1c4",
+        "name": "Nail Bangle Bracelet",
+        "price": 1150,
+        "category": "bracelet",
+        "images": [
+            "/products/NailBangleBracelet1.jpeg",
+            "/products/NailBangleBracelet.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-03T09:35:29.590Z",
+        "updatedAt": "2026-04-03T09:35:29.590Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8a3f941ca4398c5ed1c7",
+        "name": "Looped Chain Bracelet",
+        "price": 750,
+        "category": "bracelet",
+        "images": [
+            "/products/loopedchainbracelet.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:37:03.006Z",
+        "updatedAt": "2026-04-03T09:37:03.006Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8a93941ca4398c5ed1cb",
+        "name": "Layer Drop Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/layerdropchain.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:38:27.074Z",
+        "updatedAt": "2026-04-03T09:38:27.074Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8ab6941ca4398c5ed1ce",
+        "name": "Kundan Jhumka",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/kundanjhumka.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:39:02.630Z",
+        "updatedAt": "2026-04-03T09:39:02.630Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8ade941ca4398c5ed1d1",
+        "name": "Double Layer Pearl Necklace",
+        "price": 450,
+        "category": "necklace",
+        "images": [
+            "/products/doublelayerpearlset.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:39:42.420Z",
+        "updatedAt": "2026-04-03T09:39:42.420Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8b08941ca4398c5ed1d4",
+        "name": "Spring Glaze Bracelet",
+        "price": 999,
+        "category": "bracelet",
+        "images": [
+            "/products/SpringGlazeBracelet.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:40:24.615Z",
+        "updatedAt": "2026-04-03T09:40:24.615Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8b36941ca4398c5ed1d7",
+        "name": "Single Layer Pearl Necklace",
+        "price": 350,
+        "category": "necklace",
+        "images": [
+            "/products/pearlset.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:41:10.266Z",
+        "updatedAt": "2026-04-03T09:41:10.266Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8b5d941ca4398c5ed1da",
+        "name": "Open Circle Gold Cuff Bracelet",
+        "price": 1050,
+        "category": "bracelet",
+        "images": [
+            "/products/OpenCircleGoldCuffBracelet.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 4,
+        "createdAt": "2026-04-03T09:41:49.216Z",
+        "updatedAt": "2026-04-03T09:41:49.216Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8bec941ca4398c5ed1de",
+        "name": "Crystal Love Bangle Bracelet",
+        "price": 1299,
+        "category": "bracelet",
+        "images": [
+            "/products/CrystalLoveBangleBracelet.jpg",
+            "/products/CrystalLoveBangleBracelet1.jpg",
+            "/products/CrystalLoveBangleBracelet2.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 4,
+        "createdAt": "2026-04-03T09:44:12.722Z",
+        "updatedAt": "2026-04-03T09:44:12.722Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8c44941ca4398c5ed1e2",
+        "name": "American Diamond Bangle Style Bracelet",
+        "price": 1299,
+        "category": "bracelet",
+        "images": [
+            "/products/AmericanDiamondBangleStyleBracelet.jpg",
+            "/products/AmericanDiamondBangleStyleBracelet1.jpg",
+            "/products/AmericanDiamondBangleStyleBracelet2.jpg",
+            "/products/AmericanDiamondBangleStyleBracelet3.jpg",
+            "/products/AmericanDiamondBangleStyleBracelet4.jpg"
+        ],
+        "isFeatured": true,
+        "stock": 5,
+        "createdAt": "2026-04-03T09:45:40.015Z",
+        "updatedAt": "2026-04-03T09:45:40.015Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf8c62941ca4398c5ed1e5",
+        "name": "Crimped Golden Kada Bracelet",
+        "price": 999,
+        "category": "bracelet",
+        "images": [
+            "/products/CrimpedGoldenKadaBracelet.jpeg"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T09:46:10.945Z",
+        "updatedAt": "2026-04-03T09:46:10.945Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf92f5941ca4398c5ed1f5",
+        "name": "Ball Hoops Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/ballhoopsearrings.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T10:14:13.332Z",
+        "updatedAt": "2026-04-03T10:14:13.332Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf9349941ca4398c5ed1f8",
+        "name": "Plain Rectangle Hoops",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/plainrectanglehoops.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T10:15:37.734Z",
+        "updatedAt": "2026-04-03T10:15:37.734Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf936e941ca4398c5ed1fb",
+        "name": "Twisted Round Hoop Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/TwistedRoundHoopEarrings1.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T10:16:14.824Z",
+        "updatedAt": "2026-04-03T10:16:14.824Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf9399941ca4398c5ed1fe",
+        "name": "Artistic Square Stud Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/ArtisticSquareStudEarrings.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T10:16:57.613Z",
+        "updatedAt": "2026-04-03T10:16:57.613Z",
+        "__v": 0
+    },
+    {
+        "_id": "69cf93c3941ca4398c5ed201",
+        "name": "Twisted Round Hoop Earrings",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/TwistedRoundHoopEarrings.png"
+        ],
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-03T10:17:39.783Z",
+        "updatedAt": "2026-04-03T10:17:39.783Z",
+        "__v": 0
+    }
+]

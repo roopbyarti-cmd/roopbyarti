@@ -1,0 +1,409 @@
+[
+  {
+    
+    "name": "Green Pearls Necklace",
+    "price": 800,
+    "image": "/products/116-PEARL-WHITE -GREEN.jpeg",
+    "category": "necklace",
+    "isFeatured": true,
+    "stock": 1
+  },
+  {
+    "name": "AD Mangalsutra Bracelet",
+    "price": 450,
+   "image": "/products/AD-mangalsutra-bracelet.jpg",
+    "images": [
+      "/products/AD-mangalsutra-bracelet.jpg",
+      "/products/AD-mangalsutra-bracelet-1.jpg"
+    ],
+    "category": "bracelet",
+    "isFeatured": true,
+    "stock": 1
+  },
+  {
+    "name": "Layered Rani Necklace",
+    "price": 1999,
+    "image": "/products/four-layer-rani-necklace.jpg",
+    "category": "necklace",
+    "isFeatured": true,
+    "stock": 1
+  },
+  {
+    "name": "Blue Pearls Necklace",
+    "price": 800,
+    "image": "/products/120-PEARL-WHITE-BLUE.jpeg",
+    "category": "necklace",
+    "isFeatured": true,
+    "stock": 1
+  },
+  {
+    "name": "Golden Knot Earrings",
+    "price": 599,
+    "image": "/products/gold-knot-earrings.jpg",
+    "images": [
+      "/products/gold-knot-earrings.jpg",
+      "/products/Earrings.png"
+    ],
+    "category": "earrings",
+    "isFeatured": true,
+    "stock": 5
+  },
+  {
+    "name": "Golden Jhumki Combo",
+    "price": 699,
+    "image": "/products/Golden-jhumki-combo.png",
+    "images": [
+      "/products/Golden-jhumki-combo.png"
+    ],
+    "category": "earrings",
+    "isFeatured": true,
+    "stock": 1
+  },
+  {
+    "name": "Golden Leaf Bracelet with Ring",
+    "price": 750,
+    "image": "/products/Bracelet.png",
+    "images": [
+      "/products/Bracelet.png",
+      "/products/bracelet3.jpg"
+    ],
+    "category": "bracelet",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Flower Layered Chain",
+    "price": 750,
+    "image": "/products/Neckpiece.jpg",
+    "category": "necklace",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Black and Gold Pearls Bracelet",
+    "price": 350,
+    "image": "/products/mangalsutra-bracelet-big-pearl.jpg",
+    "category": "bracelet",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Black and Gold Pearls Bracelet",
+    "price": 350,
+    "image": "/products/mangalsutra-bracelet-small-pearl.jpg",
+    "category": "bracelet",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Gold Plated Necklace",
+    "price": 1500,
+    "image": "/products/traditional-necklace.jpg",
+    "category": "necklace",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "White Bow Cluster",
+    "price": 250,
+    "image": "/products/Hair-access.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Rings Combo",
+    "price": 599,
+    "image": "/products/Rings.jpg",
+    "category": "rings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Heart Pendant Set with Earrings",
+    "price": 550,
+    "image":"/products/heart-pendent-set-with-earrings1.jpg",
+    "images": [
+      "/products/heart-pendent-set-with-earrings1.jpg",
+      "/products/heart-pendent-set-with-earrings.jpg",
+      "/products/heart-pendent-set-with-earrings2.jpg",
+      "/products/heart-pendent-set-with-earrings3.jpg",
+      "/products/heart-pendent-set-with-earrings4.jpg"
+    ],
+    "category": "necklace",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Infinite Bracelet",
+    "price": 350,
+    "image": "/products/infinite-bracelet.jpg",
+    "images": [
+      "/products/infinite-bracelet.jpg",
+      "/products/infinite-bracelet1.jpg"
+    ],
+    "category": "bracelet",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Kashmiri Earrings Pink",
+    "price": 550,
+    "image": "/products/kashmiri-earring-big.png",
+    "category": "earrings",
+    "isFeatured": false
+  },
+  {
+    "name": "Kashmiri Earrings Combo",
+    "price": 550,
+    "image": "/products/kashmiri-earring-combo.png",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Flower Pendant Set with Earrings",
+    "price": 550,
+    "image": "/products/flower-pendent-set.png",
+    "category": "necklace",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Kashmiri Earrings Red",
+    "price": 550,
+    "image": "/products/kashmiri-earring3.png",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Gold Plated Earrings",
+    "price": 550,
+    "image": "/products/Golden-earring-indian.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Scrunchies Combo",
+    "price": 550,
+    "image": "/products/hair-scrunchies-combo.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Scrunchies Combo",
+    "price": 550,
+    "image": "/products/hair-scrunchies-combo-1.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Scrunchie White",
+    "price": 150,
+    "image": "/products/hair-scrunchies-white.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Scrunchie Pink",
+    "price": 150,
+    "image": "/products/hair-scrunchies-pink.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Scrunchie Black",
+    "price": 150,
+    "image": "/products/hair-scrunchies-black.jpg",
+    "category": "hair-accessories",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Small Gold Plated Jhumki",
+    "price": 350,
+    "image": "/products/Golden-jhumki-small1.png",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Small Gold Plated Jhumki",
+    "price": 350,
+    "image": "/products/Golden-jhumki-small2.png",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "Statement Earrings",
+    "price": 349,
+    "image": "/products/Statement-earring-rosegold.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "Statement Earrings",
+    "price": 349,
+    "image": "/products/Statement-earring-seacolor.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+  ,
+   {
+    "name": "Statement Drop Earrings",
+    "price": 349,
+    "image": "/products/Statement-earring-seacolor.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+   ,
+   {
+    "name": "Black AD Drop Earrings",
+    "price": 345,
+    "image": "/products/AD-black-earring.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+  ,
+   {
+    "name": "Blue AD Drop Earrings",
+    "price": 345,
+    "image": "/products/AD-blue-round-earring.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+   ,
+   {
+    "name": "Blue AD Earrings",
+    "price": 345,
+    "image": "/products/AD-blue-round-earring.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+   ,
+   {
+    "name": "AD Studs Earrings",
+    "price": 345,
+    "image": "/products/glassearringcircle.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+   ,
+   {
+    "name": "AD Studs Earrings",
+    "price": 345,
+    "image": "/products/glassearringsquare.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  }
+   ,
+   {
+    "name": "Flower AD Studs Earrings",
+    "price": 345,
+    "image": "/products/glassflower-earring.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Gold Plated Pearl Earrings",
+    "price": 450,
+    "image":"/products/gold-plated-med-earrings.jpg",
+    "images": [
+      "/products/gold-plated-med-earrings.jpg",
+      "/products/gold-plated-med-earrings1.jpg"
+    ],
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Shell Shape Earrings",
+    "price": 450,
+    "image": "/products/shellearring1.jpg",
+    "images": [
+      "/products/shellearring1.jpg",
+      "/products/shellearring2.jpg",
+      "/products/shellearring3.jpg"
+    ],
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Golden Jhumka",
+    "price": 399,
+    "image": "/products/Goldenmedjhumka.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "Green Pearl Earring",
+    "price": 450,
+    "image": "/products/Greenpearlearrings.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "White Pearl Earring",
+    "price": 450,
+    "image": "/products/Whitepearlearrings.jpg",
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "Multicolour Jhumka",
+    "price": 450,
+    "image": "/products/multicolorjhumka1.jpg",
+   "images": [
+      "/products/multicolorjhumka1.jpg",
+      "/products/multicolorjhumka2.jpg",
+      "/products/multicolorjhumka3.jpg"
+    ],
+    "category": "earrings",
+    "isFeatured": false,
+    "stock": 1
+  } ,
+  {
+    "name": "Rose Gold Necklace",
+    "price": 450,
+    "image": "/products/RoseGoldnecklace.jpg",
+    "category": "necklace",
+    "isFeatured": false,
+    "stock": 1
+  },
+  {
+    "name": "Gold Plated Rings Combo (Random Designs) ",
+    "price": 450,
+    "image": "/products/ringcombo1.jpg",
+    "category": "rings",
+    "isFeatured": false,
+    "stock": 1
+  },
+   {
+    "name": "Rose Gold Plated long Earrings",
+    "price": 450,
+    "image": "/products/ringcombo1.jpg",
+    "category": "rings",
+    "isFeatured": false,
+    "stock": 1
+  }
+]
