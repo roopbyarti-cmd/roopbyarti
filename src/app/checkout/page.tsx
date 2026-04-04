@@ -25,7 +25,7 @@ const total = subtotal + shipping;          // 👈 include shipping in total
 
   const [showQR, setShowQR] = useState(false);
   const [utr, setUtr] = useState("");
-  const [screenshot, setScreenshot] = useState<File | null>(null);
+  
   const ADMIN_PHONE = "919650758474"; // 👈 apna number (without +)
   const upiId = "9650758474@ptyes"; // 👈 apni UPI ID daalo
 const upiName = "Roop by Arti"; // 👈 business name
@@ -107,12 +107,9 @@ const sendWhatsApp = () => {
     return;
   }
 
-  if (!screenshot) {
-    toast.error("Upload screenshot");
-    return;
-  }
 
-  const base64Image = await convertToBase64(screenshot);
+
+  
 
   await fetch("/api/order", {
     method: "POST",
@@ -124,7 +121,7 @@ const sendWhatsApp = () => {
       items: cart,
       total,
       utr,
-      screenshot: base64Image,
+      
     }),
   });
 
@@ -221,25 +218,19 @@ const sendWhatsApp = () => {
             onChange={(e) => setUtr(e.target.value)}
           />
 
-          <input
-            type="file"
-            className="border p-2 w-full mb-4 rounded-lg"
-            onChange={(e) =>
-              setScreenshot(e.target.files?.[0] || null)
-            }
-          />
+         
 
-          <button
-            onClick={handleSubmitPayment}
-            disabled={!utr || utr.length !== 12 || !screenshot}
-            className={`w-full py-3 rounded-xl ${
-              utr.length === 12 && screenshot
-                ? "bg-green-600 text-white"
-                : "bg-gray-300"
-            }`}
-          >
-            Submit Payment ✅
-          </button>
+         <button
+  onClick={handleSubmitPayment}
+  disabled={!utr || utr.length !== 12}
+  className={`w-full py-3 rounded-xl ${
+    utr.length === 12
+      ? "bg-green-600 text-white"
+      : "bg-gray-300"
+  }`}
+>
+  Submit Payment ✅
+</button>
         </div>
       )}
     </div>
