@@ -43,6 +43,7 @@ export async function POST(req: Request) {
 
     // ✅ CREATE ORDER
     const order = await Order.create({
+      orderId: body.orderId, 
       name,
       email,
       phone,

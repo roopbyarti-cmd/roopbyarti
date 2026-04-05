@@ -190,8 +190,15 @@ export default function CategoryPage() {
           return (
             <div
               key={p._id}
-              onClick={() => router.push(`/product/${p._id}`)}
-              className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group relative p-1.5"
+             onClick={() => {
+  if (p.stock === 0) return; // ❌ stop click
+  router.push(`/product/${p._id}`);
+}}
+             className={`bg-white rounded-2xl overflow-hidden shadow-sm transition duration-300 group relative p-1.5 ${
+  p.stock === 0
+    ? "cursor-not-allowed"
+    : "cursor-pointer hover:shadow-xl"
+}`}
             >
               {/* Image */}
               <div className="relative" onClick={(e) => {
@@ -199,10 +206,17 @@ export default function CategoryPage() {
                 setSelectedProduct(p);
                 setCurrentImage(0);
               }}>
-                <img
-                  src={mainImage}
-                  className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group h-56 sm:h-64 md:h-72 lg:h-80mt-4 py-2.5 w-full object-cover"
-                />
+                {p.stock === 0 && (
+    <div className="absolute top-2 left-2 bg-black text-white text-[10px] sm:text-xs px-2 py-1 rounded">
+      SOLD OUT
+    </div>
+  )}
+               <img
+  src={mainImage}
+  className={`rounded-2xl h-56 sm:h-64 md:h-72 lg:h-80 w-full object-cover ${
+    p.stock === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
+  }`}
+/>
               </div>
               <div>
                 {/* Content */}
@@ -215,15 +229,21 @@ export default function CategoryPage() {
                 </p>
 
                 {/* Button */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation(); // 🔥 prevent popup open
-                    addToCart(p);
-                  }}
-                  className="w-full mt-3 sm:mt-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-gray-900 to-gray-700 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition duration-300"
-                >
-                  Add to Cart
-                </button>
+<button
+  onClick={(e) => {
+    e.stopPropagation();
+    if (p.stock === 0) return; // ❌ safety (double protection)
+    addToCart(p);
+  }}
+  disabled={p.stock === 0}
+  className={`w-full mt-3 sm:mt-4 py-2 sm:py-2.5 rounded-xl text-sm font-medium shadow-md transition duration-300 ${
+    p.stock === 0
+      ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+      : "bg-gradient-to-r from-gray-900 to-gray-700 text-white hover:shadow-lg hover:scale-[1.02]"
+  }`}
+>
+  {p.stock === 0 ? "Sold Out" : "Add to Cart"}
+</button>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -306,11 +326,16 @@ export default function CategoryPage() {
                 </p>
 
                 <button
-                  onClick={() => addToCart(selectedProduct)}
-                  className="mt-4 w-full py-3 bg-black text-white rounded-xl"
-                >
-                  Add to Cart
-                </button>
+  onClick={() => addToCart(selectedProduct)}
+  disabled={selectedProduct.stock === 0}
+  className={`mt-4 w-full py-3 rounded-xl ${
+    selectedProduct.stock === 0
+      ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+      : "bg-black text-white hover:bg-gray-800"
+  }`}
+>
+  {selectedProduct.stock === 0 ? "Sold Out" : "Add to Cart"}
+</button>
               </div>
 
             </div>
