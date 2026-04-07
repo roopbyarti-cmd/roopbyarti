@@ -1,9 +1,16 @@
 import mongoose from "mongoose";
 
-const WishlistSchema = new mongoose.Schema({
-  userId: String,
-  productId: String,
+const wishlistSchema = new mongoose.Schema({
+  phone: String,
+  products: [
+    {
+      _id: String,
+      name: String,
+      price: Number,
+      image: String,
+    },
+  ],
 });
 
 export default mongoose.models.Wishlist ||
-  mongoose.model("Wishlist", WishlistSchema);
+  mongoose.model("Wishlist", wishlistSchema);

@@ -8,46 +8,55 @@ export default function Wishlist() {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [currentImage, setCurrentImage] = useState(0);
 
-  const getUser = () =>
-    JSON.parse(localStorage.getItem("user") || "null");
+  // ✅ LOAD WISHLIST FROM DB
+  const fetchWishlist = async () => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
-  // ✅ LOAD WISHLIST (USER BASED)
+    if (!user?.phone) return;
+
+    const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+    const data = await res.json();
+
+    setWishlist(data);
+  };
+
   useEffect(() => {
-    const user = getUser();
+    fetchWishlist();
+  }, []);
+
+  // ✅ TOGGLE (ADD / REMOVE)
+  const toggleWishlist = async (product: any) => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
     if (!user?.phone) {
-      setWishlist([]);
+      toast.error("Login required");
       return;
     }
 
-    const data = JSON.parse(
-      localStorage.getItem(`wishlist_${user.phone}`) || "[]"
-    );
+    const res = await fetch("/api/wishlist", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json", // ✅ FIX
+      },
+      body: JSON.stringify({
+        phone: user.phone,
+        product,
+      }),
+    });
 
-    setWishlist(data);
-  }, []);
+    const data = await res.json();
 
-  // ✅ SAVE WISHLIST (whenever it changes)
-  useEffect(() => {
-    const user = getUser();
-
-    if (user?.phone) {
-      localStorage.setItem(
-        `wishlist_${user.phone}`,
-        JSON.stringify(wishlist)
-      );
-    }
-  }, [wishlist]);
-
-  // 🔥 REMOVE ITEM
-  const removeFromWishlist = (id: string) => {
-    const updated = wishlist.filter((item) => item._id !== id);
-    setWishlist(updated);
-
+    setWishlist(data); // ✅ sync with DB
     window.dispatchEvent(new Event("wishlistUpdated"));
   };
 
-  // 🔥 ADD TO CART
+  // ✅ REMOVE (CALL SAME API)
+  const removeFromWishlist = (product: any) => {
+    toggleWishlist(product); // 🔥 reuse API
+    toast.success("Removed from wishlist");
+  };
+
+  // 🛒 ADD TO CART
   const addToCart = (product: any) => {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
@@ -126,9 +135,9 @@ export default function Wishlist() {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    removeFromWishlist(p._id);
+                    removeFromWishlist(p);
                   }}
-                  className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md"
+                  className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:scale-110 transition"
                 >
                   ❌
                 </button>
@@ -176,7 +185,7 @@ export default function Wishlist() {
                         key={i}
                         src={img}
                         onClick={() => setCurrentImage(i)}
-                        className={`h-16 w-16 rounded ${
+                        className={`h-16 w-16 rounded cursor-pointer ${
                           currentImage === i ? "border-2 border-black" : ""
                         }`}
                       />
@@ -203,9 +212,7 @@ export default function Wishlist() {
                   </button>
 
                   <button
-                    onClick={() =>
-                      removeFromWishlist(selectedProduct._id)
-                    }
+                    onClick={() => removeFromWishlist(selectedProduct)}
                     className="flex-1 py-3 border rounded-xl"
                   >
                     Remove
