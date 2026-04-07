@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-
 import toast from "react-hot-toast";
 
 export default function Wishlist() {
@@ -9,16 +8,41 @@ export default function Wishlist() {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [currentImage, setCurrentImage] = useState(0);
 
+  const getUser = () =>
+    JSON.parse(localStorage.getItem("user") || "null");
+
+  // ✅ LOAD WISHLIST (USER BASED)
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("wishlist") || "[]");
+    const user = getUser();
+
+    if (!user?.phone) {
+      setWishlist([]);
+      return;
+    }
+
+    const data = JSON.parse(
+      localStorage.getItem(`wishlist_${user.phone}`) || "[]"
+    );
+
     setWishlist(data);
   }, []);
+
+  // ✅ SAVE WISHLIST (whenever it changes)
+  useEffect(() => {
+    const user = getUser();
+
+    if (user?.phone) {
+      localStorage.setItem(
+        `wishlist_${user.phone}`,
+        JSON.stringify(wishlist)
+      );
+    }
+  }, [wishlist]);
 
   // 🔥 REMOVE ITEM
   const removeFromWishlist = (id: string) => {
     const updated = wishlist.filter((item) => item._id !== id);
     setWishlist(updated);
-    localStorage.setItem("wishlist", JSON.stringify(updated));
 
     window.dispatchEvent(new Event("wishlistUpdated"));
   };
@@ -27,7 +51,9 @@ export default function Wishlist() {
   const addToCart = (product: any) => {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
-    const existingItem = cart.find((item: any) => item._id === product._id);
+    const existingItem = cart.find(
+      (item: any) => item._id === product._id
+    );
 
     if (existingItem) {
       existingItem.quantity = (existingItem.quantity || 1) + 1;
@@ -49,10 +75,12 @@ export default function Wishlist() {
       </h1>
 
       {wishlist.length === 0 ? (
-        <p className="text-center text-gray-500">No items yet</p>
+        <p className="text-center text-gray-500">
+          No items yet
+        </p>
       ) : (
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 sm:px-10">
 
           {wishlist.map((p: any) => (
             <div
@@ -63,8 +91,6 @@ export default function Wishlist() {
               }}
               className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden relative group"
             >
-
-             
 
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -85,38 +111,27 @@ export default function Wishlist() {
                   ₹{p.price}
                 </p>
 
-                {/* 🔥 MOVE TO CART */}
+                {/* MOVE TO CART */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     addToCart(p);
                   }}
-                  className="mt-3 w-full py-2 rounded-xl bg-gradient-to-r from-black to-gray-800 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition"
+                  className="mt-3 w-full py-2 rounded-xl bg-black text-white text-sm"
                 >
                   Move to Cart
                 </button>
+
+                {/* REMOVE */}
                 <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  removeFromWishlist(p._id);
-                }}
-                className="absolute top-3 right-3 bg-white/90 backdrop-blur p-2 rounded-full shadow-md hover:scale-110 transition"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.8}
-                  stroke="black"
-                  className="w-5 h-5"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    removeFromWishlist(p._id);
+                  }}
+                  className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 7h12M9 7V5h6v2m-7 4v6m4-6v6m4-6v6M4 7h16l-1 14H5L4 7z"
-                  />
-                </svg>
-              </button>
+                  ❌
+                </button>
               </div>
             </div>
           ))}
@@ -124,13 +139,18 @@ export default function Wishlist() {
         </div>
       )}
 
-      {/* 🔥 QUICK VIEW MODAL */}
+      {/* 🔥 POPUP */}
       {selectedProduct && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]">
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]"
+          onClick={() => setSelectedProduct(null)}
+        >
 
-          <div className="bg-white rounded-2xl p-6 w-[90%] max-w-3xl relative">
+          <div
+            className="bg-white rounded-2xl p-6 w-[90%] max-w-3xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
 
-            {/* CLOSE */}
             <button
               onClick={() => setSelectedProduct(null)}
               className="absolute top-3 right-4 text-xl"
@@ -138,16 +158,14 @@ export default function Wishlist() {
               ✖
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
 
-              {/* IMAGES */}
               <div>
                 <img
-                  src={encodeURI(
+                  src={
                     selectedProduct.images?.[currentImage] ||
                     selectedProduct.image
-                  )}
-                  onError={(e: any) => (e.target.src = "/no-image.png")}
+                  }
                   className="w-full h-96 object-cover rounded-xl"
                 />
 
@@ -156,10 +174,10 @@ export default function Wishlist() {
                     (img: string, i: number) => (
                       <img
                         key={i}
-                        src={encodeURI(img)}
+                        src={img}
                         onClick={() => setCurrentImage(i)}
-                        className={`h-16 w-16 object-cover rounded cursor-pointer border ${
-                          currentImage === i ? "border-black" : ""
+                        className={`h-16 w-16 rounded ${
+                          currentImage === i ? "border-2 border-black" : ""
                         }`}
                       />
                     )
@@ -167,7 +185,6 @@ export default function Wishlist() {
                 </div>
               </div>
 
-              {/* INFO */}
               <div>
                 <h2 className="text-xl font-semibold">
                   {selectedProduct.name}
@@ -177,12 +194,10 @@ export default function Wishlist() {
                   ₹{selectedProduct.price}
                 </p>
 
-                {/* 🔥 BUTTONS */}
                 <div className="flex gap-3 mt-6">
-
                   <button
                     onClick={() => addToCart(selectedProduct)}
-                    className="flex-1 py-3 rounded-xl bg-gradient-to-r from-black to-gray-800 text-white font-medium shadow-md hover:shadow-lg transition"
+                    className="flex-1 py-3 bg-black text-white rounded-xl"
                   >
                     Add to Cart
                   </button>
@@ -191,11 +206,10 @@ export default function Wishlist() {
                     onClick={() =>
                       removeFromWishlist(selectedProduct._id)
                     }
-                    className="flex-1 py-3 rounded-xl border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition"
+                    className="flex-1 py-3 border rounded-xl"
                   >
                     Remove
                   </button>
-
                 </div>
               </div>
 

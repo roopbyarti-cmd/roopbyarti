@@ -4,37 +4,28 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 export default function Login() {
-  const [isLogin, setIsLogin] = useState(true);
-
+  const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleSubmit = async () => {
-    const url = isLogin ? "/api/login" : "/api/register";
-
-    const res = await fetch(url, {
-      method: "POST",
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    });
-
-    const data = await res.json();
-
-    if (data.error) {
-      toast.success(data.error);
+  const handleLogin = () => {
+    // ✅ validation
+    if (!/^[0-9]{10}$/.test(phone)) {
+      toast.error("Enter valid 10-digit phone number");
       return;
     }
 
-    // ✅ Save user
-    localStorage.setItem("user", JSON.stringify(data));
+    // ✅ save user
+    const userData = {
+      name: name || "User",
+      phone,
+    };
 
-    toast.success("Welcome");
+    localStorage.setItem("user", JSON.stringify(userData));
 
-    window.location.href = "/";
+    toast.success("Login successful 🎉");
+
+    // 👉 redirect to orders
+    window.location.href = "/orders";
   };
 
   return (
@@ -43,44 +34,35 @@ export default function Login() {
       <div className="bg-white p-8 rounded-2xl shadow-md w-[90%] max-w-md">
 
         <h2 className="text-2xl font-bold text-center mb-6">
-          {isLogin ? "Login" : "Register"}
+          Login
         </h2>
 
-        {!isLogin && (
-          <input
-            placeholder="Name"
-            className="border p-3 w-full mb-3 rounded-lg"
-            onChange={(e) => setName(e.target.value)}
-          />
-        )}
-
         <input
-          placeholder="Email"
+          placeholder="Your Name (optional)"
           className="border p-3 w-full mb-3 rounded-lg"
-          onChange={(e) => setEmail(e.target.value)}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
 
         <input
-          type="password"
-          placeholder="Password"
+          placeholder="Enter Phone Number"
           className="border p-3 w-full mb-3 rounded-lg"
-          onChange={(e) => setPassword(e.target.value)}
+          value={phone}
+          onChange={(e) => {
+            const val = e.target.value.replace(/\D/g, "");
+            if (val.length <= 10) setPhone(val);
+          }}
         />
 
         <button
-          onClick={handleSubmit}
+          onClick={handleLogin}
           className="w-full bg-black text-white py-3 rounded-xl mt-2"
         >
-          {isLogin ? "Login" : "Register"}
+          Continue
         </button>
 
-        <p
-          className="text-center mt-4 cursor-pointer text-sm text-gray-600"
-          onClick={() => setIsLogin(!isLogin)}
-        >
-          {isLogin
-            ? "New user? Register here"
-            : "Already have account? Login"}
+        <p className="text-xs text-gray-500 mt-4 text-center">
+          Use same phone number to see your orders & wishlist
         </p>
 
       </div>

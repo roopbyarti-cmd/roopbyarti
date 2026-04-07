@@ -153,10 +153,11 @@ export default function Checkout() {
         utr,
       }),
     });
+
     localStorage.setItem(
-      "user",
-      JSON.stringify({ name, email, phone })
-    );
+  "user",
+  JSON.stringify({ name, phone })
+);
 
     // ✅ WHATSAPP SEND
     sendWhatsApp();
@@ -231,10 +232,11 @@ export default function Checkout() {
       {/* FORM */}
       <div className="space-y-3">
         <input
-          placeholder="Full Name"
-          className="border p-3 w-full rounded-lg"
-          onChange={(e) => setName(e.target.value)}
-        />
+  placeholder="Full Name"
+  className="border p-3 w-full rounded-lg"
+  value={name}
+  onChange={(e) => setName(e.target.value.replace(/[^a-zA-Z\s]/g, ""))}
+/>
 
        <input
   placeholder="Email"
