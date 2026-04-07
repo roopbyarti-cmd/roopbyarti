@@ -9,46 +9,60 @@ export default function Wishlist() {
   const [currentImage, setCurrentImage] = useState(0);
 
   // ✅ LOAD WISHLIST FROM DB
-  const fetchWishlist = async () => {
-    const user = JSON.parse(localStorage.getItem("user") || "null");
+const fetchWishlist = async () => {
+  const user = JSON.parse(localStorage.getItem("user") || "null");
 
-    if (!user?.phone) return;
+  console.log("USER:", user); // 👈 ADD
 
-    const res = await fetch(`/api/wishlist?phone=${user.phone}`);
-    const data = await res.json();
+  if (!user?.phone) return;
 
-    setWishlist(data);
-  };
+  const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+  const data = await res.json();
+
+  console.log("WISHLIST DATA:", data); // 👈 ADD
+
+  setWishlist(data);
+};
 
   useEffect(() => {
     fetchWishlist();
   }, []);
 
   // ✅ TOGGLE (ADD / REMOVE)
-  const toggleWishlist = async (product: any) => {
-    const user = JSON.parse(localStorage.getItem("user") || "null");
+ const toggleWishlist = async (product: any) => {
+  const user = JSON.parse(localStorage.getItem("user") || "null");
 
-    if (!user?.phone) {
-      toast.error("Login required");
-      return;
-    }
+  if (!user?.phone) {
+    toast.error("Login required");
+    return;
+  }
 
+  try {
     const res = await fetch("/api/wishlist", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json", // ✅ FIX
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        phone: user.phone,
-        product,
+        phone: String(user.phone), // ✅ FIX
+        product: {
+          ...product,
+          _id: product._id || product.id, // ✅ FIX (important)
+        },
       }),
     });
 
     const data = await res.json();
 
-    setWishlist(data); // ✅ sync with DB
+    console.log("WISHLIST RESPONSE:", data); // ✅ DEBUG
+
+    setWishlist(data);
     window.dispatchEvent(new Event("wishlistUpdated"));
-  };
+  } catch (err) {
+    console.error(err);
+    toast.error("Something went wrong");
+  }
+};
 
   // ✅ REMOVE (CALL SAME API)
   const removeFromWishlist = (product: any) => {

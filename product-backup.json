@@ -12,27 +12,12 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.794Z",
-        "updatedAt": "2026-04-03T06:13:27.794Z"
-    },
-    {
-        "_id": "69cf5a87941ca4398c5ed0ac",
-        "name": "AD Mangalsutra Bracelet",
-        "price": 450,
-        "image": "/products/AD-mangalsutra-bracelet.jpg",
-        "category": "bracelet",
-        "images": [
-            "/products/AD-mangalsutra-bracelet.jpg",
-            "/products/AD-mangalsutra-bracelet-1.jpg"
-        ],
-        "isFeatured": true,
-        "stock": 1,
-        "__v": 0,
-        "createdAt": "2026-04-03T06:13:27.794Z",
-        "updatedAt": "2026-04-03T06:13:27.794Z"
+        "updatedAt": "2026-04-03T15:46:01.476Z",
+        "description": "green and white necklace Material and stone type: alloy with pearls Plating: gold-plated Closure: drawstring"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0ad",
-        "name": "Layered Rani Necklace",
+        "name": "Layer Rani Necklace",
         "price": 1999,
         "image": "/products/four-layer-rani-necklace.jpg",
         "category": "necklace",
@@ -43,7 +28,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.794Z",
-        "updatedAt": "2026-04-03T06:13:27.794Z"
+        "updatedAt": "2026-04-04T03:39:31.972Z",
+        "description": "Gold-toned layered necklace Material and stone type: brass with artificial beads Plating: gold-plated"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0ae",
@@ -58,7 +44,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.794Z",
-        "updatedAt": "2026-04-03T06:13:27.794Z"
+        "updatedAt": "2026-04-04T03:41:15.677Z",
+        "description": "This jewellery set consists of a necklace Gold-toned layered necklace, has blue and white pearl beaded details Secured with a drawstring closure."
     },
     {
         "_id": "69cf5a87941ca4398c5ed0af",
@@ -71,10 +58,11 @@
             "/products/Earrings.png"
         ],
         "isFeatured": true,
-        "stock": 5,
+        "stock": 10,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.794Z",
-        "updatedAt": "2026-04-03T06:13:27.794Z"
+        "updatedAt": "2026-04-06T06:27:58.423Z",
+        "description": "Gold-toned sassy knots studs, gold-plated Secured with a post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b0",
@@ -89,7 +77,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:43:19.458Z",
+        "description": "Gold-Toned and dome shaped jhumkas, gold-plated, has artificial stones and beads Secured with a post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b1",
@@ -105,7 +94,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:44:11.761Z",
+        "description": "Gold-toned cuff bracelet with ring Material and stone type: alloy Closure: slip-on"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b3",
@@ -120,7 +110,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:45:00.529Z",
+        "description": "Gold-toned and black link bracelet Material and stone type: brass with artificial beads Plating: gold-plated Closure: lobster closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b4",
@@ -135,7 +126,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:45:07.636Z",
+        "description": "Gold-toned and black link bracelet Material and stone type: brass with artificial beads Plating: gold-plated Closure: lobster closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b5",
@@ -150,7 +142,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:47:12.764Z",
+        "description": "This jewellery set consists of a necklace Gold Plated paan leaf necklace, secured with a drawstring closure, secured with post-and-back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b6",
@@ -165,7 +158,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:49:35.362Z",
+        "description": "White bow clutcher, Material: plastic"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b7",
@@ -180,7 +174,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:50:56.637Z",
+        "description": "Set of Gold-Toned finger rings, has shine-stud details"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b8",
@@ -199,7 +194,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:52:20.363Z",
+        "description": "Gold-toned antique necklace Material with earrings and stone type: stainless steel Plating: gold-plated Closure: s-hook"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0b9",
@@ -215,7 +211,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:53:14.225Z",
+        "description": "Gold-plated link bracelet Secured with a lobster closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0ba",
@@ -230,12 +227,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T04:55:37.432Z",
+        "description": "Gold Classic Drop earrings , has Artificial Pink Stones Secured with a Post and Back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0bb",
         "name": "Kashmiri Earrings Combo",
-        "price": 550,
+        "price": 1550,
         "image": "/products/kashmiri-earring-combo.png",
         "category": "earrings",
         "images": [
@@ -245,7 +243,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-06T07:16:44.969Z",
+        "description": "Set of 4 Classic Drop earrings, has Artificial Stones Secured with a Post and Back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0bc",
@@ -260,7 +259,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:56:06.607Z",
+        "description": "This jewellery set consists of a necklace and a pair of earrings Gold-plated pendant necklace, has white cubic-zirconia-studded with intricated details Secured with a s-hook closure A pair of matching flower earrings, each secured with a post-and-back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0bd",
@@ -275,7 +275,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:56:32.306Z",
+        "description": "Red Classic Drop earrings, has Artificial Stones Secured with a Post and Back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0be",
@@ -290,7 +291,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:58:16.314Z",
+        "description": "Gold-toned classic chandbalis, gold-plated, has pearls Secured with a post and back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0bf",
@@ -305,7 +307,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:59:28.777Z",
+        "description": "5 random-coloured and back ponytail holders Scrinchies Combo"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c0",
@@ -320,7 +323,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T03:59:36.139Z",
+        "description": "5 random-coloured and back ponytail holders Scrinchies Combo"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c1",
@@ -335,7 +339,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T04:00:23.715Z",
+        "description": "white scrunchie and back ponytail holders "
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c2",
@@ -350,7 +355,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.795Z",
-        "updatedAt": "2026-04-03T06:13:27.795Z"
+        "updatedAt": "2026-04-04T04:00:34.137Z",
+        "description": "Pink scrunchie and back ponytail holders "
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c3",
@@ -365,7 +371,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:00:45.235Z",
+        "description": "Black scrunchie and back ponytail holders "
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c4",
@@ -377,10 +384,11 @@
             "/products/Golden-jhumki-small1.png"
         ],
         "isFeatured": false,
-        "stock": 1,
+        "stock": 0,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T08:12:46.041Z",
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure."
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c5",
@@ -395,12 +403,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:01:23.063Z",
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure."
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c6",
         "name": "Statement Earrings",
-        "price": 349,
+        "price": 550,
         "image": "/products/Statement-earring-rosegold.jpg",
         "category": "earrings",
         "images": [
@@ -410,12 +419,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T12:23:51.994Z",
+        "description": "Gold-toned Geometric Shaped Drop Earrings , has artificial stones studded  Secured with a Post and Back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c7",
         "name": "Statement Earrings",
-        "price": 349,
+        "price": 550,
         "image": "/products/Statement-earring-seacolor.jpg",
         "category": "earrings",
         "images": [
@@ -425,27 +435,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
-    },
-    {
-        "_id": "69cf5a87941ca4398c5ed0c8",
-        "name": "Statement Drop Earrings",
-        "price": 349,
-        "image": "/products/Statement-earring-seacolor.jpg",
-        "category": "earrings",
-        "images": [
-            "/products/Statement-earring-seacolor.jpg"
-        ],
-        "isFeatured": false,
-        "stock": 1,
-        "__v": 0,
-        "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T12:24:00.653Z",
+        "description": "Gold-toned Geometric Shaped Drop Earrings , has artificial stones studded  Secured with a Post and Back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0c9",
         "name": "Black AD Drop Earrings",
-        "price": 345,
+        "price": 545,
         "image": "/products/AD-black-earring.jpg",
         "category": "earrings",
         "images": [
@@ -455,12 +451,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T07:51:50.462Z",
+        "description": "Black classic drop earrings Secured with a post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0ca",
         "name": "Blue AD Drop Earrings",
-        "price": 345,
+        "price": 545,
         "image": "/products/AD-blue-round-earring.jpg",
         "category": "earrings",
         "images": [
@@ -470,27 +467,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
-    },
-    {
-        "_id": "69cf5a87941ca4398c5ed0cb",
-        "name": "Blue AD Earrings",
-        "price": 345,
-        "image": "/products/AD-blue-round-earring.jpg",
-        "category": "earrings",
-        "images": [
-            "/products/AD-blue-round-earring.jpg"
-        ],
-        "isFeatured": false,
-        "stock": 1,
-        "__v": 0,
-        "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T07:51:59.838Z",
+        "description": "Blue contemporary drop earrings, has crystals Secured with a post and back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0cc",
         "name": "AD Studs Earrings",
-        "price": 345,
+        "price": 545,
         "image": "/products/glassearringcircle.jpg",
         "category": "earrings",
         "images": [
@@ -500,12 +483,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T07:52:09.023Z",
+        "description": "white studs Crystal, good plating, post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0cd",
         "name": "AD Studs Earrings",
-        "price": 345,
+        "price": 545,
         "image": "/products/glassearringsquare.jpg",
         "category": "earrings",
         "images": [
@@ -515,7 +499,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T07:52:36.631Z",
+        "description": "White crystal studs, rectangle shape, post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0ce",
@@ -527,10 +512,11 @@
             "/products/glassflower-earring.jpg"
         ],
         "isFeatured": false,
-        "stock": 1,
+        "stock": 0,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-06T07:50:15.236Z",
+        "description": "white crystal studs, flower shape, post and back closure"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0cf",
@@ -546,7 +532,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:06:41.479Z",
+        "description": "Gold-toned contemporary earrings, silver-plated has artitifical stone studded details. Secure with post and back closure."
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d0",
@@ -563,7 +550,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:07:17.047Z",
+        "description": "Gold-Plated Metal Shell-Inspired Stud Earrings"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d1",
@@ -578,7 +566,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:06:21.931Z",
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure."
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d2",
@@ -593,7 +582,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:08:04.181Z",
+        "description": "Gold-toned and Blue Chandbalis, Gold-Plated, has Pearls Secured with a Post and Back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d3",
@@ -608,7 +598,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:08:17.683Z",
+        "description": "Gold-toned and Blue Chandbalis, Gold-Plated, has Pearls Secured with a Post and Back"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d4",
@@ -625,12 +616,13 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:08:55.467Z",
+        "description": "Multicoloured contemporary jhumkas, has artificial stones"
     },
     {
         "_id": "69cf5a87941ca4398c5ed0d5",
         "name": "Rose Gold Necklace",
-        "price": 450,
+        "price": 550,
         "image": "/products/RoseGoldnecklace.jpg",
         "category": "necklace",
         "images": [
@@ -640,7 +632,8 @@
         "stock": 1,
         "__v": 0,
         "createdAt": "2026-04-03T06:13:27.796Z",
-        "updatedAt": "2026-04-03T06:13:27.796Z"
+        "updatedAt": "2026-04-04T04:09:54.398Z",
+        "description": "This jewellery set consists of a necklace, a pair of earrings and a maang tikka Rose Gold-plated choker necklace has white rainbow stone-studded and beaded details Secured with a S hook closure A pair of matching drop earrings, each secured with a post-and-back closure A matching maang tikka, secured with a hook closure"
     },
     {
         "_id": "69cf60d5941ca4398c5ed0e3",
@@ -656,8 +649,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T06:40:21.198Z",
-        "updatedAt": "2026-04-03T06:40:21.198Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:37:49.685Z",
+        "__v": 0,
+        "description": "Black flower bracelete, Anti-Tarnish, gold-plated "
     },
     {
         "_id": "69cf61f1941ca4398c5ed0e6",
@@ -670,8 +664,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T06:45:05.304Z",
-        "updatedAt": "2026-04-03T06:45:05.304Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:38:10.642Z",
+        "__v": 0,
+        "description": "Black and golden flower bracelete, Anti-Tarnish, gold-plated "
     },
     {
         "_id": "69cf670a941ca4398c5ed0f0",
@@ -684,8 +679,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:06:50.510Z",
-        "updatedAt": "2026-04-03T07:06:50.510Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:12:21.098Z",
+        "__v": 0,
+        "description": "Adjustable Friendship Loved Ones Cuddle Hug Ring"
     },
     {
         "_id": "69cf673a941ca4398c5ed0f3",
@@ -698,8 +694,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:07:38.787Z",
-        "updatedAt": "2026-04-03T07:07:38.787Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:13:17.681Z",
+        "__v": 0,
+        "description": "Set Of 2 gold-sliver plated with artifical stones detailed "
     },
     {
         "_id": "69cf675e941ca4398c5ed0f6",
@@ -712,8 +709,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:08:14.588Z",
-        "updatedAt": "2026-04-03T07:08:14.588Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:13:56.597Z",
+        "__v": 0,
+        "description": "Set of 5 Oxidised silver-plated finger rings"
     },
     {
         "_id": "69cf6798941ca4398c5ed0fa",
@@ -726,8 +724,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:09:12.766Z",
-        "updatedAt": "2026-04-03T07:09:12.766Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:14:37.217Z",
+        "__v": 0,
+        "description": "Set of 3 golden-plated finger rings"
     },
     {
         "_id": "69cf67c1941ca4398c5ed0fd",
@@ -740,8 +739,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:09:53.469Z",
-        "updatedAt": "2026-04-03T07:09:53.469Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:14:59.262Z",
+        "__v": 0,
+        "description": "Set of 5 golden-plated adjustable finger rings"
     },
     {
         "_id": "69cf67ea941ca4398c5ed100",
@@ -754,8 +754,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:10:34.144Z",
-        "updatedAt": "2026-04-03T07:10:34.144Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:16:05.923Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf680a941ca4398c5ed103",
@@ -768,8 +769,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:11:06.942Z",
-        "updatedAt": "2026-04-03T07:11:06.942Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:16:28.684Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details pink stones Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6859941ca4398c5ed106",
@@ -782,8 +784,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:12:25.050Z",
-        "updatedAt": "2026-04-03T07:12:25.050Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:14:13.782Z",
+        "__v": 0,
+        "description": "Set of 6 Oxidised silver-plated finger rings"
     },
     {
         "_id": "69cf687a941ca4398c5ed109",
@@ -796,8 +799,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:12:58.014Z",
-        "updatedAt": "2026-04-03T07:12:58.014Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:17:58.540Z",
+        "__v": 0,
+        "description": "set of 3 gold plated rings with artificial stone"
     },
     {
         "_id": "69cf689f941ca4398c5ed10c",
@@ -810,27 +814,14 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:13:35.397Z",
-        "updatedAt": "2026-04-03T07:13:35.397Z",
-        "__v": 0
-    },
-    {
-        "_id": "69cf68a3941ca4398c5ed10f",
-        "name": "",
-        "price": 0,
-        "category": "",
-        "images": [
-            ""
-        ],
-        "isFeatured": true,
-        "stock": 0,
-        "createdAt": "2026-04-03T07:13:39.162Z",
-        "updatedAt": "2026-04-03T07:13:39.162Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:18:36.090Z",
+        "__v": 0,
+        "description": "Set of 2 gold and sliver plated ring with artificial stone"
     },
     {
         "_id": "69cf68c6941ca4398c5ed112",
         "name": "Gold Plated Rings Combo (15)",
-        "price": 1399,
+        "price": 599,
         "category": "rings",
         "images": [
             "/products/gold-plated-ring-combo.png"
@@ -838,8 +829,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:14:14.230Z",
-        "updatedAt": "2026-04-03T07:14:14.230Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:19:04.268Z",
+        "__v": 0,
+        "description": "Set of 15 gold plated rings"
     },
     {
         "_id": "69cf690d941ca4398c5ed116",
@@ -852,8 +844,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:15:25.698Z",
-        "updatedAt": "2026-04-03T07:15:25.698Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:19:19.894Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6932941ca4398c5ed119",
@@ -866,8 +859,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:16:02.498Z",
-        "updatedAt": "2026-04-03T07:16:02.498Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:19:31.974Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6959941ca4398c5ed11c",
@@ -880,8 +874,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:16:41.634Z",
-        "updatedAt": "2026-04-03T07:16:41.634Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:19:50.283Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf697b941ca4398c5ed11f",
@@ -894,8 +889,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:17:15.612Z",
-        "updatedAt": "2026-04-03T07:17:15.612Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:19:59.941Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf69ae941ca4398c5ed122",
@@ -906,10 +902,11 @@
             "/products/crystal-gold-ring.png"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 0,
         "createdAt": "2026-04-03T07:18:06.965Z",
-        "updatedAt": "2026-04-03T07:18:06.965Z",
-        "__v": 0
+        "updatedAt": "2026-04-05T09:32:14.083Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf69fa941ca4398c5ed129",
@@ -922,8 +919,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:19:22.571Z",
-        "updatedAt": "2026-04-03T07:19:22.571Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:20:22.962Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6a2f941ca4398c5ed12c",
@@ -936,8 +934,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:20:15.468Z",
-        "updatedAt": "2026-04-03T07:20:15.468Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:20:31.168Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6a4c941ca4398c5ed12f",
@@ -950,8 +949,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:20:44.947Z",
-        "updatedAt": "2026-04-03T07:20:44.947Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:22:45.057Z",
+        "__v": 0,
+        "description": "Gold-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6a83941ca4398c5ed133",
@@ -964,8 +964,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:21:39.790Z",
-        "updatedAt": "2026-04-03T07:21:39.790Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:23:03.607Z",
+        "__v": 0,
+        "description": "Sliver-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6aaa941ca4398c5ed136",
@@ -978,8 +979,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:22:18.590Z",
-        "updatedAt": "2026-04-03T07:22:18.590Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:23:34.730Z",
+        "__v": 0,
+        "description": "Set of 36 rings combo full box of beautiful rings"
     },
     {
         "_id": "69cf6af2941ca4398c5ed139",
@@ -992,8 +994,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:23:30.580Z",
-        "updatedAt": "2026-04-03T07:23:30.580Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:24:09.645Z",
+        "__v": 0,
+        "description": "Sliver-Plated finger ring, has American Diamond-studded details"
     },
     {
         "_id": "69cf6b19941ca4398c5ed13c",
@@ -1006,8 +1009,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:24:09.051Z",
-        "updatedAt": "2026-04-03T07:24:09.051Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:24:36.633Z",
+        "__v": 0,
+        "description": "Set of gold plated rings"
     },
     {
         "_id": "69cf6b38941ca4398c5ed13f",
@@ -1020,8 +1024,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:24:40.703Z",
-        "updatedAt": "2026-04-03T07:24:40.703Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:25:00.494Z",
+        "__v": 0,
+        "description": "Sliver-Plated finger ring, has American Diamond-studded details Secured with slip on closure adjustable cocktail ring"
     },
     {
         "_id": "69cf6b64941ca4398c5ed142",
@@ -1034,8 +1039,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T07:25:24.321Z",
-        "updatedAt": "2026-04-03T07:25:24.321Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:25:36.922Z",
+        "__v": 0,
+        "description": "Gold-toned twisted circular shaped hoop earrings, gold-plated Secured with a post and back closure"
     },
     {
         "_id": "69cf6c39941ca4398c5ed147",
@@ -1046,10 +1052,11 @@
             "/products/hasli.jpg"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 0,
         "createdAt": "2026-04-03T07:28:57.901Z",
-        "updatedAt": "2026-04-03T07:28:57.901Z",
-        "__v": 0
+        "updatedAt": "2026-04-05T09:28:43.968Z",
+        "__v": 0,
+        "description": "Gold-toned and white necklace Material and stone type: alloy with artificial stones Plating: gold-plated"
     },
     {
         "_id": "69cf6c96941ca4398c5ed14d",
@@ -1062,8 +1069,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T07:30:30.754Z",
-        "updatedAt": "2026-04-03T07:30:30.754Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:32:55.903Z",
+        "__v": 0,
+        "description": "Gold-toned and white chain Material and stone type: stainless steel Plating: gold-plated Closure: lobster closure Anti-Tarnish"
     },
     {
         "_id": "69cf6cc9941ca4398c5ed151",
@@ -1076,8 +1084,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:31:21.671Z",
-        "updatedAt": "2026-04-03T07:31:21.671Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:29:15.621Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish"
     },
     {
         "_id": "69cf6cf1941ca4398c5ed154",
@@ -1090,8 +1099,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T07:32:01.657Z",
-        "updatedAt": "2026-04-03T07:32:01.657Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:29:45.508Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link heart with AD Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish"
     },
     {
         "_id": "69cf6d11941ca4398c5ed157",
@@ -1104,8 +1114,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T07:32:33.151Z",
-        "updatedAt": "2026-04-03T07:32:33.151Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:29:56.347Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish"
     },
     {
         "_id": "69cf6d38941ca4398c5ed15a",
@@ -1118,8 +1129,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:33:12.034Z",
-        "updatedAt": "2026-04-03T07:33:12.034Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:30:25.514Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish layer chain with hearts in black color"
     },
     {
         "_id": "69cf6d67941ca4398c5ed15e",
@@ -1132,8 +1144,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:33:59.883Z",
-        "updatedAt": "2026-04-03T07:33:59.883Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:30:40.647Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish layer chain with tags in black color"
     },
     {
         "_id": "69cf6dab941ca4398c5ed166",
@@ -1146,8 +1159,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:35:07.104Z",
-        "updatedAt": "2026-04-03T07:35:07.104Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:30:56.024Z",
+        "__v": 0,
+        "description": "Gold-toned and yellow Link Chains Necklace Material and stone type: Stainless Steel Plating: Gold-Plated Closure: Lobster Closure, Anti-Tarnish layer chain with hearts in black color"
     },
     {
         "_id": "69cf6dd5941ca4398c5ed169",
@@ -1160,8 +1174,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:35:49.515Z",
-        "updatedAt": "2026-04-03T07:35:49.515Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:31:31.001Z",
+        "__v": 0,
+        "description": "18k gold plated water drop necklace"
     },
     {
         "_id": "69cf6e4d941ca4398c5ed16c",
@@ -1174,8 +1189,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:37:49.967Z",
-        "updatedAt": "2026-04-03T07:37:49.967Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:32:30.085Z",
+        "__v": 0,
+        "description": "Anti-Tarnish, Gold-toned bangle-style bracelet Material and stone type: stainless steel Plating: gold-plated Closure: slip-on"
     },
     {
         "_id": "69cf6e92941ca4398c5ed16f",
@@ -1188,8 +1204,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:38:58.905Z",
-        "updatedAt": "2026-04-03T07:38:58.905Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:33:45.697Z",
+        "__v": 0,
+        "description": "Anti-Tarnish, rose gold-toned bangle-style bracelet Material and AD stone type: stainless steel Plating: gold-plated Closure: slip-on"
     },
     {
         "_id": "69cf6ebb941ca4398c5ed172",
@@ -1202,8 +1219,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:39:39.702Z",
-        "updatedAt": "2026-04-03T07:39:39.702Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:35:35.875Z",
+        "__v": 0,
+        "description": "Anti-Tarnish, Gold-toned looped chain, Material and stone type: stainless steel Plating: gold-plated"
     },
     {
         "_id": "69cf6f0e941ca4398c5ed175",
@@ -1214,10 +1232,11 @@
             "/products/hoops.jpg"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 0,
         "createdAt": "2026-04-03T07:41:02.957Z",
-        "updatedAt": "2026-04-03T07:41:02.957Z",
-        "__v": 0
+        "updatedAt": "2026-04-05T09:31:58.261Z",
+        "__v": 0,
+        "description": "Anti-Tarnish, Gold-toned oval hoop earrings, gold-plated Secured with a insert"
     },
     {
         "_id": "69cf6f3d941ca4398c5ed179",
@@ -1230,8 +1249,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:41:49.484Z",
-        "updatedAt": "2026-04-03T07:41:49.484Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:38:41.614Z",
+        "__v": 0,
+        "description": "White flower bracelete, Anti-Tarnish, gold-plated"
     },
     {
         "_id": "69cf6fa0941ca4398c5ed185",
@@ -1244,8 +1264,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:43:28.034Z",
-        "updatedAt": "2026-04-03T07:43:28.034Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:41:12.028Z",
+        "__v": 0,
+        "description": "Set of 4 gold-toned and white bangles, each has white pearl-beaded details, secured with slip-on closure"
     },
     {
         "_id": "69cf701c941ca4398c5ed189",
@@ -1256,10 +1277,11 @@
             "/products/flowerwesternearring.png"
         ],
         "isFeatured": true,
-        "stock": 3,
+        "stock": 2,
         "createdAt": "2026-04-03T07:45:32.646Z",
-        "updatedAt": "2026-04-03T07:45:32.646Z",
-        "__v": 0
+        "updatedAt": "2026-04-06T06:32:02.004Z",
+        "__v": 0,
+        "description": "Gold-toned Floral Drop earrings"
     },
     {
         "_id": "69cf707c941ca4398c5ed18c",
@@ -1273,10 +1295,11 @@
             "/products/goldenset3.jpg"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 0,
         "createdAt": "2026-04-03T07:47:08.319Z",
-        "updatedAt": "2026-04-03T07:47:08.319Z",
-        "__v": 0
+        "updatedAt": "2026-04-05T09:27:51.844Z",
+        "__v": 0,
+        "description": "This jewellery set consists of  Green & red gold-plated studded choker necklace, has AD stones and beads detailing, secured with drawstring closure A pair of matching drop earrings, secured with a post and back closure"
     },
     {
         "_id": "69cf710c941ca4398c5ed190",
@@ -1289,8 +1312,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:49:32.885Z",
-        "updatedAt": "2026-04-03T07:49:32.885Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:44:16.851Z",
+        "__v": 0,
+        "description": "This jewellery set consists of a necklace and a pair of earrings  White gold-plated necklace has kundan studded details, secured with a drawstring closure A pair of matching stud earrings, each secured with a post-and-back closure"
     },
     {
         "_id": "69cf712b941ca4398c5ed193",
@@ -1303,8 +1327,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:50:03.968Z",
-        "updatedAt": "2026-04-03T07:50:03.968Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:44:29.588Z",
+        "__v": 0,
+        "description": "This jewellery set consists of a necklace and a pair of earrings  White gold-plated necklace has kundan studded details, secured with a drawstring closure A pair of matching stud earrings, each secured with a post-and-back closure"
     },
     {
         "_id": "69cf7147941ca4398c5ed196",
@@ -1317,8 +1342,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T07:50:31.549Z",
-        "updatedAt": "2026-04-03T07:50:31.549Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:44:43.717Z",
+        "__v": 0,
+        "description": "Set of 2 This jewellery set consists of a necklace and a pair of earrings  White gold-plated necklace has kundan studded details, secured with a drawstring closure A pair of matching stud earrings, each secured with a post-and-back closure"
     },
     {
         "_id": "69cf73c4941ca4398c5ed1a1",
@@ -1331,8 +1357,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T08:01:08.241Z",
-        "updatedAt": "2026-04-03T08:01:08.241Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:50:50.142Z",
+        "__v": 0,
+        "description": "This jewellery set consists of a necklace and a pair of earrings and mang tikka Gold-plated , A pair of matching earrings"
     },
     {
         "_id": "69cf825e941ca4398c5ed1a7",
@@ -1346,8 +1373,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:03:26.732Z",
-        "updatedAt": "2026-04-03T09:03:26.732Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:54:41.404Z",
+        "__v": 0,
+        "description": "Gold-toned necklace Material and stone type: alloy Plating: gold-plated Closure: lobster closure"
     },
     {
         "_id": "69cf82a3941ca4398c5ed1ac",
@@ -1360,8 +1388,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:04:35.126Z",
-        "updatedAt": "2026-04-03T09:04:35.126Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:55:29.630Z",
+        "__v": 0,
+        "description": "Gold Classic Drop earrings , has Artificial green Stones Secured with a Post and Back"
     },
     {
         "_id": "69cf8380941ca4398c5ed1af",
@@ -1374,8 +1403,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:08:16.112Z",
-        "updatedAt": "2026-04-03T09:08:16.112Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:56:32.021Z",
+        "__v": 0,
+        "description": "Anti-Tarnish Gold plated square studs earrings"
     },
     {
         "_id": "69cf83a6941ca4398c5ed1b2",
@@ -1386,10 +1416,11 @@
             "/products/crushedEarrings.png"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 2,
         "createdAt": "2026-04-03T09:08:54.135Z",
-        "updatedAt": "2026-04-03T09:08:54.135Z",
-        "__v": 0
+        "updatedAt": "2026-04-06T06:34:51.640Z",
+        "__v": 0,
+        "description": "Anti-Tarnish Gold plated crushed studs earrings"
     },
     {
         "_id": "69cf8901941ca4398c5ed1b8",
@@ -1402,8 +1433,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T09:31:45.993Z",
-        "updatedAt": "2026-04-03T09:31:45.993Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:57:41.374Z",
+        "__v": 0,
+        "description": "Gold-toned bangle-style bracelet Material and stone type: stainless steel Plating: gold-plated Closure: slip-on"
     },
     {
         "_id": "69cf8934941ca4398c5ed1bc",
@@ -1414,10 +1446,11 @@
             "/products/Shell-long.jpg"
         ],
         "isFeatured": true,
-        "stock": 3,
+        "stock": 1,
         "createdAt": "2026-04-03T09:32:36.418Z",
-        "updatedAt": "2026-04-03T09:32:36.418Z",
-        "__v": 0
+        "updatedAt": "2026-04-06T06:33:33.187Z",
+        "__v": 0,
+        "description": "Gold-toned shell shaped drop earrings, gold-plated Secured with a post and back"
     },
     {
         "_id": "69cf8979941ca4398c5ed1c0",
@@ -1431,8 +1464,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T09:33:45.048Z",
-        "updatedAt": "2026-04-03T09:33:45.048Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:59:02.015Z",
+        "__v": 0,
+        "description": "Set of 2 Gold Plated Metal with Zircon Stones Pacheli Style Traditional Kada For Women, secured with slip on closure Bangle set can make your look beautiful and attractive Bangle is made of good quality Material"
     },
     {
         "_id": "69cf89e1941ca4398c5ed1c4",
@@ -1446,8 +1480,9 @@
         "isFeatured": true,
         "stock": 2,
         "createdAt": "2026-04-03T09:35:29.590Z",
-        "updatedAt": "2026-04-03T09:35:29.590Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:59:29.907Z",
+        "__v": 0,
+        "description": "Gold-toned bracelet Material and stone type: Stainless Steel Plating: Gold-Plated Closure:  Interlock Closure"
     },
     {
         "_id": "69cf8a3f941ca4398c5ed1c7",
@@ -1460,8 +1495,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:37:03.006Z",
-        "updatedAt": "2026-04-03T09:37:03.006Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:00:53.850Z",
+        "__v": 0,
+        "description": " Gold-toned Link bracelet Material and stone type: Metal Plating: Closure: Slip on"
     },
     {
         "_id": "69cf8a93941ca4398c5ed1cb",
@@ -1474,8 +1510,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:38:27.074Z",
-        "updatedAt": "2026-04-03T09:38:27.074Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:01:31.544Z",
+        "__v": 0,
+        "description": "Contemporary 2 layered chain Material and stone type: alloy Plating: gold-plated Closure: lobster closure"
     },
     {
         "_id": "69cf8ab6941ca4398c5ed1ce",
@@ -1488,8 +1525,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:39:02.630Z",
-        "updatedAt": "2026-04-03T09:39:02.630Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:02:04.405Z",
+        "__v": 0,
+        "description": "White and gold-toned contemporary jhumkas, gold-plated, has kundan Secured with a post and back"
     },
     {
         "_id": "69cf8ade941ca4398c5ed1d1",
@@ -1502,8 +1540,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:39:42.420Z",
-        "updatedAt": "2026-04-03T09:39:42.420Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:02:36.908Z",
+        "__v": 0,
+        "description": "Gold-toned and white layered necklace Material and stone type: brass with pearls Closure: drawstring"
     },
     {
         "_id": "69cf8b08941ca4398c5ed1d4",
@@ -1516,8 +1555,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T09:40:24.615Z",
-        "updatedAt": "2026-04-03T09:40:24.615Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:05:13.539Z",
+        "__v": 0,
+        "description": "Gold-toned kada bracelet Material and stone type: stainless steel Plating: Gold "
     },
     {
         "_id": "69cf8b36941ca4398c5ed1d7",
@@ -1528,10 +1568,11 @@
             "/products/pearlset.jpg"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 3,
         "createdAt": "2026-04-03T09:41:10.266Z",
-        "updatedAt": "2026-04-03T09:41:10.266Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T04:39:59.061Z",
+        "__v": 0,
+        "description": "White handcrafted necklace Material and stone type: sterling silver with pearls Plating: rhodium-plated Closure: lobster closure"
     },
     {
         "_id": "69cf8b5d941ca4398c5ed1da",
@@ -1544,8 +1585,9 @@
         "isFeatured": true,
         "stock": 4,
         "createdAt": "2026-04-03T09:41:49.216Z",
-        "updatedAt": "2026-04-03T09:41:49.216Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:05:38.294Z",
+        "__v": 0,
+        "description": "Gold-toned cuff bracelet Material and stone type: metal Plating: gold-plated Closure: spring ring"
     },
     {
         "_id": "69cf8bec941ca4398c5ed1de",
@@ -1560,8 +1602,9 @@
         "isFeatured": true,
         "stock": 4,
         "createdAt": "2026-04-03T09:44:12.722Z",
-        "updatedAt": "2026-04-03T09:44:12.722Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:06:48.323Z",
+        "__v": 0,
+        "description": "Gold-toned & white kada bracelet Material and stone type: stainless steel Plating: gold-plated Closure: foldover"
     },
     {
         "_id": "69cf8c44941ca4398c5ed1e2",
@@ -1578,8 +1621,9 @@
         "isFeatured": true,
         "stock": 5,
         "createdAt": "2026-04-03T09:45:40.015Z",
-        "updatedAt": "2026-04-03T09:45:40.015Z",
-        "__v": 0
+        "updatedAt": "2026-04-03T15:12:52.937Z",
+        "__v": 2,
+        "description": "Gold-toned bangle-style bracelet Material and stone type: alloy with american diamond, Plating: gold-plated, Closure: slip-on"
     },
     {
         "_id": "69cf8c62941ca4398c5ed1e5",
@@ -1590,10 +1634,11 @@
             "/products/CrimpedGoldenKadaBracelet.jpeg"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 0,
         "createdAt": "2026-04-03T09:46:10.945Z",
-        "updatedAt": "2026-04-03T09:46:10.945Z",
-        "__v": 0
+        "updatedAt": "2026-04-05T09:31:42.940Z",
+        "__v": 0,
+        "description": "Gold-toned cuff bracelet Material and stone type: stainless steel Plating: gold-plated Closure: slip-on"
     },
     {
         "_id": "69cf92f5941ca4398c5ed1f5",
@@ -1606,8 +1651,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T10:14:13.332Z",
-        "updatedAt": "2026-04-03T10:14:13.332Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:07:52.221Z",
+        "__v": 0,
+        "description": "Ball hoop earrings/Studs, Anti-Tarnish , Gold plated"
     },
     {
         "_id": "69cf9349941ca4398c5ed1f8",
@@ -1620,8 +1666,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T10:15:37.734Z",
-        "updatedAt": "2026-04-03T10:15:37.734Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:08:20.505Z",
+        "__v": 0,
+        "description": "Plain classic rectangle hoops , Anti-Tarnish, Gold plated"
     },
     {
         "_id": "69cf936e941ca4398c5ed1fb",
@@ -1634,8 +1681,9 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T10:16:14.824Z",
-        "updatedAt": "2026-04-03T10:16:14.824Z",
-        "__v": 0
+        "updatedAt": "2026-04-04T05:08:41.025Z",
+        "__v": 0,
+        "description": "Twisted Round Hoop Earrings gold plated, Anti-Tarnish"
     },
     {
         "_id": "69cf9399941ca4398c5ed1fe",
@@ -1646,10 +1694,11 @@
             "/products/ArtisticSquareStudEarrings.png"
         ],
         "isFeatured": true,
-        "stock": 1,
+        "stock": 2,
         "createdAt": "2026-04-03T10:16:57.613Z",
-        "updatedAt": "2026-04-03T10:16:57.613Z",
-        "__v": 0
+        "updatedAt": "2026-04-06T06:29:56.498Z",
+        "__v": 0,
+        "description": "Artistic Square Stud Earrings, Sqaure shape, gold plated, Anti-Tarnish"
     },
     {
         "_id": "69cf93c3941ca4398c5ed201",
@@ -1662,7 +1711,1102 @@
         "isFeatured": true,
         "stock": 1,
         "createdAt": "2026-04-03T10:17:39.783Z",
-        "updatedAt": "2026-04-03T10:17:39.783Z",
+        "updatedAt": "2026-04-04T05:09:40.552Z",
+        "__v": 0,
+        "description": "Twisted Round Hoop Earrings, Anti-Tarnish, Gold Plated"
+    },
+    {
+        "_id": "69d229bb6383e591d4c04049",
+        "name": "AD Mangalsutra Bracelet",
+        "price": 450,
+        "category": "bracelet",
+        "images": [
+            "/products/AD-mangalsutra-bracelet.jpg",
+            "/products/AD-mangalsutra-bracelet-1.jpg"
+        ],
+        "description": "AD Mangalsuta Bracelet Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 0,
+        "createdAt": "2026-04-05T09:22:03.863Z",
+        "updatedAt": "2026-04-05T09:22:03.863Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33567dc5774817da355ce",
+        "name": "Yellow Jhumka",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/yellowjhumki.png"
+        ],
+        "description": "Yellow Floral Jhumkas, Gold-Plated, has Artificial Stones and Beads Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:24:07.511Z",
+        "updatedAt": "2026-04-06T04:24:07.511Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d336afdc5774817da355d1",
+        "name": "White Flower Necklace",
+        "price": 450,
+        "category": "necklace",
+        "images": [
+            "/products/whiteflowernecklace1.jpg",
+            "/products/whiteflowernecklace.jpg"
+        ],
+        "description": "Gold-plated floral pendant set, Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:29:35.014Z",
+        "updatedAt": "2026-04-06T04:29:35.014Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33789dc5774817da355d4",
+        "name": "Wave Statement Earrings",
+        "price": 530,
+        "category": "earrings",
+        "images": [
+            "/products/waveearrings.png",
+            "/products/waveearrings1.jpg",
+            "/products/waveearrings2.jpg"
+        ],
+        "description": "Gold-Plated Stainless Steel Tarnish-Free Waterproof Pearl- Wave Earrings",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T04:33:13.413Z",
+        "updatedAt": "2026-04-06T06:35:34.501Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33823dc5774817da355d7",
+        "name": "Fan Shaped Earrings",
+        "price": 650,
+        "category": "earrings",
+        "images": [
+            "/products/fanearrings.png",
+            "/products/fanearrings1.jpg",
+            "/products/fanearrings2.jpg",
+            "/products/fanearrings3.jpg"
+        ],
+        "description": "Gold-toned Anti-Tarnish contemporary studs earrings, gold-plated Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T04:35:47.491Z",
+        "updatedAt": "2026-04-06T06:35:53.431Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d338e5dc5774817da355da",
+        "name": "Oxidised Peacock Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/smallpeacockoxi.png"
+        ],
+        "description": "Silver-plated peacock shaped drop earrings, oxidized, Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T04:39:01.501Z",
+        "updatedAt": "2026-04-06T04:39:01.501Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33946dc5774817da355dd",
+        "name": "Red Party Wear Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/redearrings.png"
+        ],
+        "description": "Red contemporary drop earrings, rhodium-plated, has rhinestone Secured with a post and back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:40:38.913Z",
+        "updatedAt": "2026-04-06T04:40:38.913Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d339cbdc5774817da355e0",
+        "name": "Red Bow Clip",
+        "price": 250,
+        "category": "hair-accessories",
+        "images": [
+            "/products/redbow.jpg"
+        ],
+        "description": "Red alligator hair clips",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:42:51.774Z",
+        "updatedAt": "2026-04-06T04:42:51.774Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33a19dc5774817da355e8",
+        "name": "Pink Floral Jhumka",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/pinkjhumka.png"
+        ],
+        "description": "Pink Floral Jhumkas, Gold-Plated, has Artificial Stones and Beads Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:44:09.085Z",
+        "updatedAt": "2026-04-06T04:44:09.085Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33a5ddc5774817da355f1",
+        "name": "Oxidised Peacock Earrings",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/peacocklongearrings.png"
+        ],
+        "description": "Silver-plated peacock shaped drop earrings, oxidized, Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 4,
+        "createdAt": "2026-04-06T04:45:17.507Z",
+        "updatedAt": "2026-04-06T07:21:40.229Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33ad7dc5774817da355f4",
+        "name": "Oxidised Elephant Earrings",
+        "price": 375,
+        "category": "earrings",
+        "images": [
+            "/products/oxielephantearrings1.png",
+            "/products/oxielephantearrings.png"
+        ],
+        "description": "Silver-toned & white elephant shaped oxidised drop earrings, rhodium-plated Secured with a fish hook earwire closure",
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-06T04:47:19.632Z",
+        "updatedAt": "2026-04-06T07:24:40.544Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33b1fdc5774817da355f9",
+        "name": "Oxidised Leaf Earrings",
+        "price": 275,
+        "category": "earrings",
+        "images": [
+            "/products/oxi-leafearrings.png"
+        ],
+        "description": "Silver-plated leaf drop shaped drop earrings, oxidized, Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T04:48:31.358Z",
+        "updatedAt": "2026-04-06T07:24:07.097Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33b5bdc5774817da355fc",
+        "name": "Oxidised Leaf Drop Jhumka",
+        "price": 275,
+        "category": "earrings",
+        "images": [
+            "/products/oxi-jhumki.png"
+        ],
+        "description": "Silver-plated leaf shaped drop jhumki earrings, oxidized, Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:49:31.148Z",
+        "updatedAt": "2026-04-06T04:49:31.148Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33ba4dc5774817da355ff",
+        "name": "Layer Love Lock Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/layerlovelocksliver.png"
+        ],
+        "description": "Love Lock Layer Anti-Tarnish Necklace Sliver-Plated, Stainless Steel",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:50:44.558Z",
+        "updatedAt": "2026-04-06T04:50:44.558Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33bdfdc5774817da35605",
+        "name": "Layer Love Lock Necklace",
+        "price": 650,
+        "category": "necklace",
+        "images": [
+            "/products/layerlovelockgold.png"
+        ],
+        "description": "Love Lock Layer Anti-Tarnish Necklace Gold-Plated, Stainless Steel",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:51:43.301Z",
+        "updatedAt": "2026-04-06T04:51:43.301Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33c23dc5774817da35608",
+        "name": "Kundan Earrings with Ring",
+        "price": 999,
+        "category": "earrings",
+        "images": [
+            "/products/kundanringandearringscombo1.png"
+        ],
+        "description": "Kundan earrings and ring set ",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:52:51.603Z",
+        "updatedAt": "2026-04-06T04:52:51.603Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33c49dc5774817da3560b",
+        "name": "Kundan Earrings with Ring",
+        "price": 999,
+        "category": "earrings",
+        "images": [
+            "/products/kundanringandearringscombo.png"
+        ],
+        "description": "Kundan earrings and ring set",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:53:29.881Z",
+        "updatedAt": "2026-04-06T04:53:29.881Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33c8fdc5774817da3560e",
+        "name": "Kundan Long Earrings ",
+        "price": 1050,
+        "category": "earrings",
+        "images": [
+            "/products/kundanlongearrings.png"
+        ],
+        "description": "Kundan long earrings rose gold, Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:54:39.263Z",
+        "updatedAt": "2026-04-06T04:54:39.263Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33cc2dc5774817da35611",
+        "name": "Kundan Leaf Earrings",
+        "price": 650,
+        "category": "earrings",
+        "images": [
+            "/products/kundanleafearrings.png"
+        ],
+        "description": "Kundan leaf earrings golden color ",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T04:55:30.082Z",
+        "updatedAt": "2026-04-06T04:55:30.082Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33d0edc5774817da35614",
+        "name": "Peacock Leaf Necklace",
+        "price": 450,
+        "category": "necklace",
+        "images": [
+            "/products/khanaleaf.jpg"
+        ],
+        "description": "Gold-Plated peacock leaf chain necklace, Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:56:46.472Z",
+        "updatedAt": "2026-04-06T04:56:46.472Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33d61dc5774817da35617",
+        "name": "Statement Neckalce",
+        "price": 450,
+        "category": "necklace",
+        "images": [
+            "/products/hiranheadnecklace.png"
+        ],
+        "description": "Statement necklace, Gold-plated, Tarnish-Free",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T04:58:09.614Z",
+        "updatedAt": "2026-04-06T04:58:09.614Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33da1dc5774817da3561a",
+        "name": "Green Stone Golden Jhumka",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/greenstonegoldjhumka.png"
+        ],
+        "description": "Golden party wear green stone jhumka , medium size ",
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-06T04:59:13.078Z",
+        "updatedAt": "2026-04-06T04:59:13.078Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33dd7dc5774817da35620",
+        "name": "Green Floral Jhumka",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/greenjhumka.png"
+        ],
+        "description": "Green Floral Jhumkas, Gold-Plated, has Artificial Stones and Beads Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:00:07.769Z",
+        "updatedAt": "2026-04-06T05:22:50.182Z",
+        "__v": 1
+    },
+    {
+        "_id": "69d33e20dc5774817da35626",
+        "name": "Brown Bow Clip",
+        "price": 250,
+        "category": "hair-accessories",
+        "images": [
+            "/products/goldenbow.jpg"
+        ],
+        "description": "Brown alligator hair clips",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:01:20.434Z",
+        "updatedAt": "2026-04-06T05:01:20.434Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33e57dc5774817da3562c",
+        "name": "Oxidised Peacock Earrings",
+        "price": 500,
+        "category": "earrings",
+        "images": [
+            "/products/fullpeacockoxi.png"
+        ],
+        "description": "Silver-plated peacock shaped drop earrings, oxidized, Secured with a post and back closure",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:02:15.545Z",
+        "updatedAt": "2026-04-06T07:22:41.163Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33e8edc5774817da3562f",
+        "name": "Evil Eye Black Pearl Bracelet",
+        "price": 350,
+        "category": "bracelet",
+        "images": [
+            "/products/evileyebracelet.png"
+        ],
+        "description": "Evil Eye Black Pearl Bracelet",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T05:03:10.114Z",
+        "updatedAt": "2026-04-06T05:03:10.114Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33ee9dc5774817da35632",
+        "name": "Silver Plated Crystals Drop Earrings",
+        "price": 387,
+        "category": "earrings",
+        "images": [
+            "/products/dangalers.png"
+        ],
+        "description": "Silver Plated Crystals Drop Earrings",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T05:04:41.445Z",
+        "updatedAt": "2026-04-06T05:04:41.445Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33f5edc5774817da35638",
+        "name": "Blue Party Wear Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/blueearrings.png"
+        ],
+        "description": "Red contemporary drop earrings, rhodium-plated, has rhinestone Secured with a post and back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:06:38.973Z",
+        "updatedAt": "2026-04-06T05:06:38.973Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33fa4dc5774817da3563e",
+        "name": "Black Bow Clip",
+        "price": 250,
+        "category": "hair-accessories",
+        "images": [
+            "/products/blackbowsmall.jpg"
+        ],
+        "description": "Black alligator hair clips",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:07:48.419Z",
+        "updatedAt": "2026-04-06T05:07:48.419Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d33ffedc5774817da35641",
+        "name": "American Diamond Pearl Necklace",
+        "price": 750,
+        "category": "necklace",
+        "images": [
+            "/products/Adpearlnecklace.png"
+        ],
+        "description": "American Diamond Neckalce with mang tikka and earrings, back contains dori",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T05:09:18.897Z",
+        "updatedAt": "2026-04-06T05:09:18.897Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d34034dc5774817da35644",
+        "name": "American Diamond Long Earrings",
+        "price": 650,
+        "category": "earrings",
+        "images": [
+            "/products/adearringslong.png"
+        ],
+        "description": "American Diamond Long Earrings rose gold plated",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T05:10:12.185Z",
+        "updatedAt": "2026-04-06T05:10:12.185Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d355b6b4d537597f0826cf",
+        "name": "Statement Western Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/roundfan.png"
+        ],
+        "description": "Gold Plated Anti-Tarnish Golden Earrings Round fan shape",
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-06T06:41:58.411Z",
+        "updatedAt": "2026-04-06T06:41:58.411Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d356eeb4d537597f0826d2",
+        "name": "Rose Gold Hoops",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/hoopsrosegold.jpeg",
+            "/products/hoopsrosegold1.png"
+        ],
+        "description": "Rose Gold plated classic hoops, Anti-Tarnish, stainless steel",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T06:47:10.603Z",
+        "updatedAt": "2026-04-06T06:47:10.603Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35922b4d537597f0826d8",
+        "name": "Square Studs Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/classicstuds.png",
+            "/products/classicstuds.jpeg"
+        ],
+        "description": "Anti-Tarnish square shape studs earrings, Gold-plated",
+        "isFeatured": true,
+        "stock": 3,
+        "createdAt": "2026-04-06T06:56:34.915Z",
+        "updatedAt": "2026-04-06T06:56:34.915Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35a31b4d537597f0826db",
+        "name": "Classic Hoops",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/semihoops.png"
+        ],
+        "description": "Anti-Tarnish Golden hoops",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:01:05.491Z",
+        "updatedAt": "2026-04-06T07:01:05.491Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35aa0b4d537597f0826de",
+        "name": "Round Hoops",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/BaaliHoops.jpeg"
+        ],
+        "description": "Anti-Tarnish Round hoops , 18K gold plated earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:02:56.812Z",
+        "updatedAt": "2026-04-06T07:02:56.812Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35dd2b4d537597f0826e8",
+        "name": "Kashmiri Earrings Pink",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/pinkkashmiriearrings.png"
+        ],
+        "description": "Red Classic Drop earrings, has Artificial Stones Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:16:34.228Z",
+        "updatedAt": "2026-04-06T07:16:34.228Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35e6ab4d537597f0826f1",
+        "name": "Kashmiri Earrings Blue",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/bluekashmiri.png"
+        ],
+        "description": "Blue and pink Classic Drop earrings, has Artificial Stones Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:19:06.585Z",
+        "updatedAt": "2026-04-06T07:19:06.585Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d35e92b4d537597f0826f4",
+        "name": "Kashmiri Earrings Blue/Pink",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/bluepinkkashmiri.png"
+        ],
+        "description": "Classic Drop earrings, has Artificial Stones Secured with a Post and Back",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:19:46.626Z",
+        "updatedAt": "2026-04-06T07:19:46.626Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d363a8b4d537597f082703",
+        "name": "Antique Elephant Earrings",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/elephantgolden.png"
+        ],
+        "description": "Antique Elephant Earrings, Golden Color",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:41:28.844Z",
+        "updatedAt": "2026-04-06T07:41:28.844Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3643bb4d537597f082706",
+        "name": "Oxidised Earrings ",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/oxidisedearringspurple.png"
+        ],
+        "description": "Oxidised Earrings purple color with stones",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T07:43:55.548Z",
+        "updatedAt": "2026-04-06T07:43:55.548Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d36465b4d537597f082709",
+        "name": "Oxidised Earrings ",
+        "price": 450,
+        "category": "earrings",
+        "images": [
+            "/products/oxiblack.png"
+        ],
+        "description": "Oxidised Earrings black color with stones",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:44:37.861Z",
+        "updatedAt": "2026-04-06T07:44:37.861Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3653eb4d537597f08270e",
+        "name": "Oxidised Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/oxidisedearringssmall.png"
+        ],
+        "description": "Oxidised Earrings fan leaf shape",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T07:48:14.394Z",
+        "updatedAt": "2026-04-06T07:48:14.394Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d36a2db4d537597f082721",
+        "name": "Oxidised Jhumki",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/stonesjhumki.png"
+        ],
+        "description": "Oxidised Jhumki small with stones",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T08:09:17.903Z",
+        "updatedAt": "2026-04-06T08:09:17.903Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3926fb4d537597f082735",
+        "name": "Evil Eye Infinite Bracelet",
+        "price": 400,
+        "category": "bracelet",
+        "images": [
+            "/products/infinitegoldbracelet.jpg",
+            "/products/infinitegoldbracelet1.jpg",
+            "/products/infinitegoldbracelet2.jpg"
+        ],
+        "description": "Evil Eye Infinite Bracelet with AD stones gold plated, Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:01:03.260Z",
+        "updatedAt": "2026-04-06T11:01:03.260Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39421b4d537597f08273d",
+        "name": "Evil Eye black Beads Bracelet",
+        "price": 400,
+        "category": "bracelet",
+        "images": [
+            "/products/Evileyebraceletonmacrame.png",
+            "/products/Evileyebraceletonmacrame1.png",
+            "/products/Evileyebraceletonmacrame2.png"
+        ],
+        "description": "Evil Eye black Beads Bracelet, Mangalsutra",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:08:17.572Z",
+        "updatedAt": "2026-04-06T11:08:17.572Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3951fb4d537597f082741",
+        "name": "18k Gold Plate AD Necklace",
+        "price": 1199,
+        "category": "necklace",
+        "images": [
+            "/products/18k-goldplatedchain.jpg"
+        ],
+        "description": "18k Gold Plated Anti-Tarnish necklace with AD stones.",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:12:31.829Z",
+        "updatedAt": "2026-04-06T11:12:31.829Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3955ab4d537597f082744",
+        "name": "Classic Plain Chain",
+        "price": 350,
+        "category": "necklace",
+        "images": [
+            "/products/classicplainchain.jpg"
+        ],
+        "description": "Classic Plain Chain Anti-Tarnish Gold-Plated",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:13:30.648Z",
+        "updatedAt": "2026-04-06T11:13:30.648Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39658b4d537597f082747",
+        "name": "Elegant 18k Gold-Plated Necklace",
+        "price": 1099,
+        "category": "necklace",
+        "images": [
+            "/products/Elegantgoldnecklacewithdelicatedetails.png"
+        ],
+        "description": "Elegant 18k gold-plated necklace with delicate details",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:17:44.460Z",
+        "updatedAt": "2026-04-06T11:17:44.460Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39718b4d537597f08274a",
+        "name": "Oxidised Half Leaf Earrings",
+        "price": 375,
+        "category": "earrings",
+        "images": [
+            "/products/halfleafearrings.png"
+        ],
+        "description": "Oxidised Half Leaf Earrings beautiful detailing",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:20:56.764Z",
+        "updatedAt": "2026-04-06T11:20:56.764Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39803b4d537597f08274d",
+        "name": "Intricate Silver Indian Earrings",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/IntricatesilverIndianearrings.png"
+        ],
+        "description": "Intricate Silver Indian Earrings with unique design",
+        "isFeatured": true,
+        "stock": 2,
+        "createdAt": "2026-04-06T11:24:51.043Z",
+        "updatedAt": "2026-04-06T11:24:51.043Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39b85b4d537597f082750",
+        "name": "Elegant Earrings With Green Stones",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/Elegantwithgreenstones.png"
+        ],
+        "description": "Elegant With Green Stones and small pearls",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:39:49.011Z",
+        "updatedAt": "2026-04-06T11:39:49.011Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39bcbb4d537597f082753",
+        "name": "Elegant Turquoise Earrings",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/Elegantturquoiseandsilverearrings.png"
+        ],
+        "description": "Elegant Turquoise Earrings with small pearls",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:40:59.212Z",
+        "updatedAt": "2026-04-06T11:40:59.212Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39bfdb4d537597f082756",
+        "name": "Elegant Golden Jhumki",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/Elegantgoldjhumki.png"
+        ],
+        "description": "Elegant Golden Jhumki",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:41:49.007Z",
+        "updatedAt": "2026-04-06T11:41:49.007Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39c49b4d537597f082759",
+        "name": "Elegant Earrings With Black Stone",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/Elegantwithblackgemstones.png"
+        ],
+        "description": "Elegant Earrings With Black Stone with small pearls",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:43:05.690Z",
+        "updatedAt": "2026-04-06T11:43:05.690Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39c88b4d537597f08275c",
+        "name": "Elegant Green Stones Earrings",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/Elegantwithgreen gemstones.png"
+        ],
+        "description": "Elegant Earrings With Green Stones",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:44:08.100Z",
+        "updatedAt": "2026-04-06T11:45:08.200Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39e40b4d537597f082764",
+        "name": "Golden Pearl Jhumki",
+        "price": 425,
+        "category": "earrings",
+        "images": [
+            "/products/goldenpearljhumki.png"
+        ],
+        "description": "Golden Pearl Jhumki Anti-Tarnish jhumki",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:51:28.553Z",
+        "updatedAt": "2026-04-06T11:51:28.553Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d39e7cb4d537597f082767",
+        "name": "Elegent Light Green Earrings",
+        "price": 195,
+        "category": "earrings",
+        "images": [
+            "/products/lightgreenearrings.png"
+        ],
+        "description": "Elegent Light Green Earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T11:52:28.269Z",
+        "updatedAt": "2026-04-06T11:52:28.269Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a05fb4d537597f08276a",
+        "name": "Blue American Diamond Earrings",
+        "price": 545,
+        "category": "earrings",
+        "images": [
+            "/products/blueadearrings.png"
+        ],
+        "description": "Beautiful Blue American Diamond Earrings Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:00:31.497Z",
+        "updatedAt": "2026-04-06T12:00:31.497Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a0a9b4d537597f08276d",
+        "name": "Light Green American Diamond Earrings",
+        "price": 545,
+        "category": "earrings",
+        "images": [
+            "/products/lighrgreenroundad.png"
+        ],
+        "description": "Light Green American Diamond Earrings Anti-Tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:01:45.685Z",
+        "updatedAt": "2026-04-06T12:01:45.685Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a13fb4d537597f082770",
+        "name": "MultiColour Pearls Earrings",
+        "price": 250,
+        "category": "earrings",
+        "images": [
+            "/products/multicolorbeadsearrings.png"
+        ],
+        "description": "MultiColour Pearls Earrings Oxidised ",
+        "isFeatured": true,
+        "stock": 4,
+        "createdAt": "2026-04-06T12:04:15.019Z",
+        "updatedAt": "2026-04-06T12:04:15.019Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a1f7b4d537597f082773",
+        "name": "Square Shape Oxi Earrings",
+        "price": 225,
+        "category": "earrings",
+        "images": [
+            "/products/oxisquarebeads.png"
+        ],
+        "description": "Square Shape Oxi Earrings with small beads",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:07:19.672Z",
+        "updatedAt": "2026-04-06T12:07:19.672Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a2fbb4d537597f082776",
+        "name": "Mirror Oxidised Earrings",
+        "price": 252,
+        "category": "earrings",
+        "images": [
+            "/products/mirrordetailchand.png"
+        ],
+        "description": "Mirror work Oxidised Earrings, Chandbaali Style earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:11:39.855Z",
+        "updatedAt": "2026-04-06T12:11:39.855Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a405b4d537597f082779",
+        "name": "Golden Traditional Earrings",
+        "price": 465,
+        "category": "earrings",
+        "images": [
+            "/products/indiangoldenearrings.png"
+        ],
+        "description": "Golden Traditional Earrings, Anti-Tarnish earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:16:05.865Z",
+        "updatedAt": "2026-04-06T12:16:05.865Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a4d6b4d537597f08277c",
+        "name": "Black Drop AD Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/blackdropadearrings.png"
+        ],
+        "description": "Gold-Plated Anti tarnish earring with drop black stone and american diamond earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:19:34.047Z",
+        "updatedAt": "2026-04-06T12:19:34.047Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a587b4d537597f082780",
+        "name": "Yellow Drop AD Earrings",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/\\yellowdropearring.png"
+        ],
+        "description": "Gold-Plated Anti tarnish earring with drop yellow stone and american diamond earrings",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:22:31.925Z",
+        "updatedAt": "2026-04-06T12:22:31.925Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a695b4d537597f082789",
+        "name": "Drop Earrings With American Diamond ",
+        "price": 550,
+        "category": "earrings",
+        "images": [
+            "/products/Dropadyellow.png"
+        ],
+        "description": "Drop rose gold Earrings With American Diamond anti tarnish",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:27:01.726Z",
+        "updatedAt": "2026-04-06T12:27:01.726Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d3a71ab4d537597f08278c",
+        "name": "Purple Drop Earrings",
+        "price": 465,
+        "category": "earrings",
+        "images": [
+            "/products/purpledrop.png"
+        ],
+        "description": "Purple sliver base anti tarnish drop earrings with AD stones",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-06T12:29:14.634Z",
+        "updatedAt": "2026-04-06T12:29:14.634Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d47a7bb4d537597f082792",
+        "name": "Small Gold Plated Jhumki",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/jhumk1.png"
+        ],
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure.",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-07T03:31:07.070Z",
+        "updatedAt": "2026-04-07T03:31:07.070Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d47aa2b4d537597f082795",
+        "name": "Small Gold Plated Jhumki",
+        "price": 350,
+        "category": "earrings",
+        "images": [
+            "/products/jhumki2.png"
+        ],
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure.",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-07T03:31:46.375Z",
+        "updatedAt": "2026-04-07T03:31:46.375Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d47ad2b4d537597f082798",
+        "name": "Temple Gold Plated Jhumki",
+        "price": 375,
+        "category": "earrings",
+        "images": [
+            "/products/templejhumki.png"
+        ],
+        "description": "Gold-toned contemporary jhumkas, silver-plated has artitifical stone studded details. Secure with post and back closure.",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-07T03:32:34.157Z",
+        "updatedAt": "2026-04-07T03:32:34.157Z",
+        "__v": 0
+    },
+    {
+        "_id": "69d47b11b4d537597f08279b",
+        "name": "Kundan Jhumka",
+        "price": 545,
+        "category": "earrings",
+        "images": [
+            "/products/kundanjhumki.png"
+        ],
+        "description": "Kundan jhumki Gold-toned contemporary jhumkas, Kundan stone studded details. Secure with post and back closure.",
+        "isFeatured": true,
+        "stock": 1,
+        "createdAt": "2026-04-07T03:33:37.307Z",
+        "updatedAt": "2026-04-07T03:33:37.307Z",
         "__v": 0
     }
 ]
