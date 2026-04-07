@@ -214,17 +214,24 @@ export default function Header() {
 
               <a href="/wishlist">Wishlist</a>
               <a href="/cart">Cart</a>
+{user ? (
+  <div className="space-y-3">
+    <p className="text-sm">Hi, {user.name}</p>
 
-              {user ? (
-                <>
-                  <p className="text-sm">Hi, {user.name}</p>
-                  <button onClick={handleLogout} className="text-red-500">
-                    Logout
-                  </button>
-                </>
-              ) : (
-                <a href="/login">Login</a>
-              )}
+    <a href="/orders" className="block text-sm text-gray-700">
+      My Orders 📦
+    </a>
+
+    <button
+      onClick={handleLogout}
+      className="text-red-500 text-left"
+    >
+      Logout
+    </button>
+  </div>
+) : (
+  <a href="/login">Login</a>
+)}
 
             </div>
           </div>
