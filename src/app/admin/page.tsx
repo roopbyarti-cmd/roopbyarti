@@ -69,6 +69,10 @@ export default function Admin() {
   const updateStatus = async (id: string, status: string) => {
     await fetch("/api/admin/update-order", {
       method: "POST",
+        headers: {
+    "Content-Type": "application/json",
+    "authorization": localStorage.getItem("adminToken") || ""
+  },
       body: JSON.stringify({ id, status }),
     });
 
@@ -84,9 +88,11 @@ export default function Admin() {
       // 🔥 UPDATE
       await fetch("/api/admin/update-product", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json", // ✅ MUST
-        },
+          headers: {
+    "Content-Type": "application/json",
+    "authorization": localStorage.getItem("adminToken") || ""
+  },
+       
         body: JSON.stringify({
           id: editingId,
           name: form.name,
@@ -105,6 +111,10 @@ export default function Admin() {
       // ➕ ADD
       await fetch("/api/admin/add-product", {
         method: "POST",
+        headers: {
+    "Content-Type": "application/json",
+    "authorization": localStorage.getItem("adminToken") || ""
+  },
         body: JSON.stringify({
           name: form.name,
           price: Number(form.price),
@@ -136,12 +146,46 @@ export default function Admin() {
   const deleteProduct = async (id: string) => {
     await fetch("/api/admin/delete-product", {
       method: "POST",
+        headers: {
+    "Content-Type": "application/json",
+    "authorization": localStorage.getItem("adminToken") || ""
+  },
       body: JSON.stringify({ id }),
     });
 
     toast.success("Deleted ❌");
     fetchProducts();
   };
+  const handleAdminLogin = async () => {
+  const res = await fetch("/api/admin/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ password })
+  });
+
+  const data = await res.json();
+
+  if (data.error) {
+    alert("Wrong password ❌");
+    return;
+  }
+
+  // ✅ save token
+  localStorage.setItem("adminToken", data.token);
+
+  setIsAuthenticated(true);
+};
+
+useEffect(() => {
+  const token = localStorage.getItem("adminToken");
+
+  if (token === "admin-secret-token") {
+    setIsAuthenticated(true);
+  }
+}, []);
+
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -159,13 +203,7 @@ export default function Admin() {
           />
 
           <button
-            onClick={() => {
-              if (password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
-                setIsAuthenticated(true);
-              } else {
-                alert("Wrong password ❌");
-              }
-            }}
+            onClick={handleAdminLogin}
             className="w-full bg-black text-white py-2 rounded"
           >
             Login
