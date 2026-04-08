@@ -2,67 +2,83 @@
 
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-
+import { Trash2 } from "lucide-react"; // 👈 top me add karo
 export default function Wishlist() {
   const [wishlist, setWishlist] = useState<any[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [currentImage, setCurrentImage] = useState(0);
+  const [wishlistIds, setWishlistIds] = useState<string[]>([]);
+
 
   // ✅ LOAD WISHLIST FROM DB
-const fetchWishlist = async () => {
-  const user = JSON.parse(localStorage.getItem("user") || "null");
+  const fetchWishlist = async () => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
-  console.log("USER:", user); // 👈 ADD
+    console.log("USER:", user); // 👈 ADD
 
-  if (!user?.phone) return;
+    if (!user?.phone) return;
 
-  const res = await fetch(`/api/wishlist?phone=${user.phone}`);
-  const data = await res.json();
+    const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+    const data = await res.json();
 
-  console.log("WISHLIST DATA:", data); // 👈 ADD
+    console.log("WISHLIST DATA:", data); // 👈 ADD
 
-  setWishlist(data);
-};
+    setWishlist(data);
+  };
 
   useEffect(() => {
     fetchWishlist();
   }, []);
 
-  // ✅ TOGGLE (ADD / REMOVE)
- const toggleWishlist = async (product: any) => {
-  const user = JSON.parse(localStorage.getItem("user") || "null");
+  const toggleWishlist = async (product: any) => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
-  if (!user?.phone) {
-    toast.error("Login required");
-    return;
-  }
+    if (!user?.phone) return;
 
-  try {
-    const res = await fetch("/api/wishlist", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        phone: String(user.phone), // ✅ FIX
-        product: {
-          ...product,
-          _id: product._id || product.id, // ✅ FIX (important)
+    fetch(`/api/wishlist?phone=${user.phone}`)
+      .then(res => res.json())
+      .then(data => {
+        setWishlist(data);
+        setWishlistIds(data.map((item: any) => item._id));
+      });
+
+    try {
+      const res = await fetch("/api/wishlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      }),
-    });
+        body: JSON.stringify({
+          phone: String(user.phone),
+          product: {
+            _id: String(product._id || product.id),
+            name: product.name,
+            price: product.price,
+            image: product.image || product.images?.[0],
+          },
+        }),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    console.log("WISHLIST RESPONSE:", data); // ✅ DEBUG
+      // ✅ update wishlist state
+      setWishlist(data);
 
-    setWishlist(data);
-    window.dispatchEvent(new Event("wishlistUpdated"));
-  } catch (err) {
-    console.error(err);
-    toast.error("Something went wrong");
-  }
-};
+      // ✅ update ids for heart color
+      setWishlistIds(data.map((item: any) => item._id));
+
+      // ✅ update header count
+      window.dispatchEvent(new Event("wishlistUpdated"));
+
+      // ✅ optional toast
+      const exists = data.find((item: any) => item._id === product._id);
+      toast.success(exists ? "Added to wishlist ❤️" : "Removed from wishlist ❌");
+
+    } catch (err) {
+      console.error(err);
+      toast.error("Something went wrong");
+    }
+  };
 
   // ✅ REMOVE (CALL SAME API)
   const removeFromWishlist = (product: any) => {
@@ -120,7 +136,7 @@ const fetchWishlist = async () => {
                 <img
                   src={encodeURI(p.images?.[0] || p.image || "/no-image.png")}
                   onError={(e: any) => (e.target.src = "/no-image.png")}
-                  className="h-52 w-full object-cover group-hover:scale-105 transition duration-300"
+                  className="h-80 w-full object-cover group-hover:scale-105 transition duration-300"
                 />
               </div>
 
@@ -151,9 +167,9 @@ const fetchWishlist = async () => {
                     e.stopPropagation();
                     removeFromWishlist(p);
                   }}
-                  className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:scale-110 transition"
+                  className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:scale-110 transition group cursor-pointer"
                 >
-                  ❌
+                  <Trash2 className="w-4 h-4 text-black group-hover:text-red-500 transition" />
                 </button>
               </div>
             </div>
@@ -199,9 +215,8 @@ const fetchWishlist = async () => {
                         key={i}
                         src={img}
                         onClick={() => setCurrentImage(i)}
-                        className={`h-16 w-16 rounded cursor-pointer ${
-                          currentImage === i ? "border-2 border-black" : ""
-                        }`}
+                        className={`h-16 w-16 rounded cursor-pointer ${currentImage === i ? "border-2 border-black" : ""
+                          }`}
                       />
                     )
                   )}

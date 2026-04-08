@@ -13,24 +13,32 @@ export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [currentImage, setCurrentImage] = useState(0);
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
+
   const router = useRouter();
 
+  // ✅ LOAD WISHLIST FROM DB (IMPORTANT FIX)
+  const loadWishlist = async () => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
+    if (!user?.phone) return;
+
+    const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+    const data = await res.json();
+
+    setWishlistIds(data.map((item: any) => String(item._id)));
+  };
+
   useEffect(() => {
-    const updateWishlist = () => {
-      const data = JSON.parse(localStorage.getItem("wishlist") || "[]");
-      setWishlistIds(data.map((item: any) => item._id));
-    };
+    loadWishlist();
 
-    updateWishlist();
-
-    window.addEventListener("wishlistUpdated", updateWishlist);
+    // 🔁 header sync
+    window.addEventListener("wishlistUpdated", loadWishlist);
 
     return () => {
-      window.removeEventListener("wishlistUpdated", updateWishlist);
+      window.removeEventListener("wishlistUpdated", loadWishlist);
     };
   }, []);
 
-
+  // ✅ PRODUCTS LOAD
   useEffect(() => {
     fetch("/api/products")
       .then(res => res.json())
@@ -43,6 +51,7 @@ export default function Home() {
       });
   }, []);
 
+  // 🛒 CART
   const addToCart = (product: any) => {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
@@ -61,7 +70,7 @@ export default function Home() {
       cart.push({
         ...product,
         quantity: 1,
-        stock: product.stock ?? 1 // ✅ FIXED
+        stock: product.stock ?? 1
       });
     }
 
@@ -70,21 +79,53 @@ export default function Home() {
 
     toast.success("Added to cart");
   };
-  const toggleWishlist = (product: any) => {
-    let wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]");
 
-    const exists = wishlist.find((item: any) => item._id === product._id);
+  // ❤️ FINAL FIXED TOGGLE
+  const toggleWishlist = async (product: any) => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
-    if (exists) {
-      wishlist = wishlist.filter((item: any) => item._id !== product._id);
-    } else {
-      wishlist.push(product);
+    if (!user?.phone) {
+      toast.error("Login required");
+      return;
     }
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    try {
+      const res = await fetch("/api/wishlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          phone: String(user.phone),
+          product: {
+            _id: String(product._id || product.id),
+            name: product.name,
+            price: product.price,
+            image: product.image || product.images?.[0],
+          },
+        }),
+      });
 
-    // 🔥 notify header
-    window.dispatchEvent(new Event("wishlistUpdated"));
+      const data = await res.json();
+
+      // ✅ FIX: update IDs instantly
+      const ids = data.map((item: any) => String(item._id));
+      setWishlistIds(ids);
+
+      // ✅ header update
+      window.dispatchEvent(new Event("wishlistUpdated"));
+
+      // ✅ toast
+      if (ids.includes(String(product._id))) {
+        toast.success("Added to wishlist ❤️");
+      } else {
+        toast.success("Removed from wishlist ❌");
+      }
+
+    } catch (err) {
+      console.error(err);
+      toast.error("Error");
+    }
   };
 
   return (
@@ -94,165 +135,76 @@ export default function Home() {
         <img src="/roop-by-arti-banner.png" />
       </div>
 
-      {/* Categories */}
       <ExploreCategories />
 
-      {/* Heading */}
       <h1 className="text-2xl font-bold text-center my-6">
         Roop's Bestsellers
       </h1>
 
-      {/* Product Grid */}
+      {/* PRODUCTS */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 px-4 sm:px-10 mb-10">
         {products.map((p: any) => (
           <div
             key={p._id}
             onClick={() => router.push(`/product/${p._id}`)}
-            className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group relative p-1.5"
+            className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group relative p-1.5"
           >
-            {/* Image */}
-            <div className="relative"
+
+            {/* IMAGE */}
+            <img
+              src={
+                encodeURI(
+                  (p.images && p.images.length > 0
+                    ? p.images[0]
+                    : p.image) || "/no-image.png"
+                )
+              }
+              className="h-80 w-full object-cover rounded-xl"
+            />
+
+            {/* CONTENT */}
+            <h2 className="font-medium text-sm mt-3 text-gray-800">
+              {p.name}
+            </h2>
+
+            <p className="text-gray-500 text-sm mt-1">
+              ₹{p.price}
+            </p>
+
+            {/* CART */}
+            <button
               onClick={(e) => {
                 e.stopPropagation();
-                setSelectedProduct(p);
-                setCurrentImage(0);
+                addToCart(p);
               }}
+              className="w-full mt-4 py-2.5 rounded-xl bg-black text-white text-sm"
             >
-              <img
-                src={
-                  encodeURI(
-                    (p.images && p.images.length > 0
-                      ? p.images[0]
-                      : p.image) || "/no-image.png"
-                  )
-                }
-                onError={(e: any) => {
-                  e.target.src = "/no-image.png";
-                }}
-                className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group h-80 w-full object-cover"
-              />
-            </div>
-            <div >
-              {/* Content */}
-              <h2 className="font-medium text-sm mt-3 text-gray-800">
-                {p.name}
-              </h2>
-
-              <p className="text-gray-500 text-sm mt-1">
-                ₹{p.price}
-              </p>
-
-              {/* Button */}
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  addToCart(p);
-                }}
-                className="w-full mt-4 py-2.5 rounded-xl bg-gradient-to-r from-gray-900 to-gray-700 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition duration-300"
-              >
-                Add to Cart
-              </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-
-                  const user = JSON.parse(localStorage.getItem("user") || "null");
-
-                  if (!user) {
-                    toast.success("Please login first");
-                    window.location.href = "/login";
-                    return;
-                  }
-
-                  toggleWishlist(p);
-                }}
-                className="absolute top-2 right-2 bg-white backdrop-blur p-2 pl-2.5 h-10 w-10 rounded-full shadow hover:scale-110 active:scale-125 transition"
-              >
-                <Heart
-                  className={`w-5 h-5 transition ${wishlistIds.includes(p._id)
-                    ? "fill-red-500 text-red-500 scale-110"
-                    : "text-gray-400"
-                    }`}
-                />
-              </button>
-            </div>
-          </div>
-
-        ))}
-
-      </div>
-      <TrustedCustomer />
-      <VideoSection />
-      {/* 🔥 QUICK VIEW MODAL */}
-      {selectedProduct && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={() => setSelectedProduct(null)}>
-          <div className="bg-white rounded-2xl p-6 w-[90%] max-w-3xl relative" onClick={(e) => e.stopPropagation()}>
-
-            {/* Close */}
-            <button
-              onClick={() => setSelectedProduct(null)}
-              className="absolute top-2 right-3 text-xl"
-            >
-              ✖
+              Add to Cart
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* ❤️ HEART FIXED */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleWishlist(p);
+              }}
+              className="absolute top-2 right-2 bg-white p-2 rounded-full shadow"
+            >
+              <Heart
+                className={`w-5 h-5 transition ${
+                  wishlistIds.includes(String(p._id))
+                    ? "fill-red-500 text-red-500 scale-110"
+                    : "text-gray-400"
+                }`}
+              />
+            </button>
 
-              {/* Images */}
-              <div>
-                <img
-                  src={encodeURI(
-                    selectedProduct.images?.[currentImage] ||
-                    selectedProduct.image
-                  )}
-                  onError={(e: any) => {
-                    e.target.src = "/no-image.png";
-                  }}
-                  className="w-full h-96 object-cover rounded-xl"
-                />
-
-                {/* Thumbnails */}
-                <div className="flex gap-2 mt-3">
-                  {(selectedProduct.images || [selectedProduct.image]).map(
-                    (img: string, i: number) => (
-                      <img
-                        key={i}
-                        src={encodeURI(img)}
-                        onError={(e: any) => {
-                          e.target.src = "/no-image.png";
-                        }}
-                        onClick={() => setCurrentImage(i)}
-                        className={`h-16 w-16 object-cover rounded cursor-pointer border ${currentImage === i ? "border-black" : ""
-                          }`}
-                      />
-                    )
-                  )}
-                </div>
-              </div>
-
-              {/* Info */}
-              <div>
-                <h2 className="text-xl font-semibold">
-                  {selectedProduct.name}
-                </h2>
-
-                <p className="text-gray-600 mt-2">
-                  ₹{selectedProduct.price}
-                </p>
-
-                <button
-                  onClick={() => addToCart(selectedProduct)}
-                  className="mt-4 w-full py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition"
-                >
-                  Add to Cart
-                </button>
-              </div>
-
-            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
 
+      <TrustedCustomer />
+      <VideoSection />
     </div>
   );
 }

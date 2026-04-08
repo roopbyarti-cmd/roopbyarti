@@ -1,36 +1,53 @@
 import { connectDB } from "@/lib/db";
 import Wishlist from "@/models/Wishlist";
 
+// 🔥 ADD / REMOVE (TOGGLE)
 export async function POST(req: Request) {
   try {
     await connectDB();
 
-    const { phone, product } = await req.json();
+    const body = await req.json();
 
-    if (!phone || !product) {
-      return Response.json({ error: "Missing data" }, { status: 400 });
-    }
+    // ✅ SAFE DATA
+    const phone = String(body.phone);
 
-    const normalizedPhone = String(phone); // ✅ FIX
+    const product = {
+      _id: String(body.product?._id || Date.now()), // 🔥 FORCE ID
+      name: body.product?.name || "",
+      price: body.product?.price || 0,
+      image: body.product?.image || "",
+      images: body.product?.images || [],
+    };
 
-    let wishlist = await Wishlist.findOne({ phone: normalizedPhone });
+    console.log("PHONE:", phone);
+    console.log("PRODUCT:", product);
 
+    let wishlist = await Wishlist.findOne({ phone });
+
+    // ✅ CREATE NEW
     if (!wishlist) {
       wishlist = await Wishlist.create({
-        phone: normalizedPhone,
+        phone,
         products: [product],
       });
+
+      console.log("NEW WISHLIST CREATED");
     } else {
+      // ✅ CHECK EXIST
       const exists = wishlist.products.find(
-        (p: any) => String(p._id) === String(product._id) // ✅ FIX
+        (p: any) => String(p._id) === String(product._id)
       );
 
       if (exists) {
+        // ❌ REMOVE
         wishlist.products = wishlist.products.filter(
-          (p: any) => String(p._id) !== String(product._id) // ✅ FIX
+          (p: any) => String(p._id) !== String(product._id)
         );
+        console.log("REMOVED FROM WISHLIST");
       } else {
+        // ➕ ADD
         wishlist.products.push(product);
+        console.log("ADDED TO WISHLIST");
       }
 
       await wishlist.save();
@@ -38,28 +55,26 @@ export async function POST(req: Request) {
 
     return Response.json(wishlist.products);
   } catch (err) {
-    console.error("WISHLIST ERROR:", err); // 🔥 IMPORTANT
-    return Response.json({ error: "Server error" }, { status: 500 });
+    console.error("WISHLIST ERROR:", err);
+    return Response.json([], { status: 500 });
   }
 }
 
-// ✅ GET
+// 🔥 GET WISHLIST
 export async function GET(req: Request) {
   try {
     await connectDB();
 
     const { searchParams } = new URL(req.url);
-    const phone = searchParams.get("phone");
+    const phone = String(searchParams.get("phone"));
 
-    if (!phone) return Response.json([]);
+    const wishlist = await Wishlist.findOne({ phone });
 
-    const wishlist = await Wishlist.findOne({
-      phone: String(phone), // ✅ FIX
-    });
+    console.log("FETCHED:", wishlist);
 
     return Response.json(wishlist?.products || []);
   } catch (err) {
-    console.error("GET WISHLIST ERROR:", err);
+    console.error("GET ERROR:", err);
     return Response.json([]);
   }
 }

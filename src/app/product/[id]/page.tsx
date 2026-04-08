@@ -12,6 +12,7 @@ export default function ProductDetail() {
   const [product, setProduct] = useState<any>(null);
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
 
+  // ✅ LOAD PRODUCT + WISHLIST
   useEffect(() => {
     if (!id) return;
 
@@ -19,8 +20,25 @@ export default function ProductDetail() {
       .then(res => res.json())
       .then(data => setProduct(data));
 
-    const data = JSON.parse(localStorage.getItem("wishlist") || "[]");
-    setWishlistIds(data.map((item: any) => item._id));
+    // 🔥 FIX: LOAD FROM DB (NOT localStorage)
+    const loadWishlist = async () => {
+      const user = JSON.parse(localStorage.getItem("user") || "null");
+      if (!user?.phone) return;
+
+      const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+      const data = await res.json();
+
+      setWishlistIds(data.map((item: any) => item._id));
+    };
+
+    loadWishlist();
+
+    window.addEventListener("wishlistUpdated", loadWishlist);
+
+    return () => {
+      window.removeEventListener("wishlistUpdated", loadWishlist);
+    };
+
   }, [id]);
 
   // 🛒 ADD TO CART
@@ -39,20 +57,50 @@ export default function ProductDetail() {
     toast.success("Added to cart");
   };
 
-  // ❤️ WISHLIST
-  const toggleWishlist = () => {
-    let wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]");
+  // ❤️ FINAL FIXED TOGGLE
+  const toggleWishlist = async (product: any) => {
+    const user = JSON.parse(localStorage.getItem("user") || "null");
 
-    const exists = wishlist.find((item: any) => item._id === product._id);
-
-    if (exists) {
-      wishlist = wishlist.filter((item: any) => item._id !== product._id);
-    } else {
-      wishlist.push(product);
+    if (!user?.phone) {
+      toast.error("Login required");
+      return;
     }
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
-    setWishlistIds(wishlist.map((item: any) => item._id));
+    try {
+      const res = await fetch("/api/wishlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          phone: String(user.phone),
+          product: {
+            _id: String(product._id),
+            name: product.name,
+            price: product.price,
+            image: product.image || product.images?.[0],
+          },
+        }),
+      });
+
+      const data = await res.json();
+
+      // ✅ HEART COLOR FIX
+      setWishlistIds(data.map((item: any) => item._id));
+
+      // ✅ HEADER COUNT UPDATE
+      window.dispatchEvent(new Event("wishlistUpdated"));
+
+      const exists = data.find((item: any) => item._id === product._id);
+
+      toast.success(
+        exists ? "Added to wishlist ❤️" : "Removed from wishlist ❌"
+      );
+
+    } catch (err) {
+      console.error(err);
+      toast.error("Something went wrong");
+    }
   };
 
   if (!product) {
@@ -77,10 +125,10 @@ export default function ProductDetail() {
           <h1 className="text-2xl font-bold">{product.name}</h1>
 
           {/* ❤️ Wishlist */}
-          <button onClick={toggleWishlist}>
+          <button onClick={() => toggleWishlist(product)}>
             <Heart
-              className={`w-6 h-6 ${
-                wishlistIds.includes(product._id)
+              className={`w-6 h-6 transition ${
+                wishlistIds.includes(String(product._id))
                   ? "fill-red-500 text-red-500"
                   : "text-gray-400"
               }`}
@@ -98,7 +146,7 @@ export default function ProductDetail() {
           Add to Cart
         </button>
 
-        {/* 📝 DESCRIPTION (DYNAMIC) */}
+        {/* 📝 DESCRIPTION */}
         <div className="mt-6">
           <h3 className="font-semibold">Description</h3>
           <p className="text-gray-500 mt-2">
@@ -106,7 +154,7 @@ export default function ProductDetail() {
           </p>
         </div>
 
-        {/* 💎 CARE INSTRUCTIONS (COMMON) */}
+        {/* 💎 CARE */}
         <div className="mt-6">
           <h3 className="font-semibold">Jewellery Care Instructions</h3>
           <ul className="text-gray-500 mt-2 space-y-1 text-sm">

@@ -38,10 +38,19 @@ export default function Header() {
       setCartCount(cart.length);
     };
 
-    const updateWishlist = () => {
-      const wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]");
-      setWishlistCount(wishlist.length);
-    };
+const updateWishlist = async () => {
+  const user = JSON.parse(localStorage.getItem("user") || "null");
+
+  if (!user?.phone) {
+    setWishlistCount(0);
+    return;
+  }
+
+  const res = await fetch(`/api/wishlist?phone=${user.phone}`);
+  const data = await res.json();
+
+  setWishlistCount(data.length);
+};
 
     const userData = JSON.parse(localStorage.getItem("user") || "null");
     setUser(userData);
