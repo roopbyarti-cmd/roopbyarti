@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Heart } from "lucide-react";
+import { Heart, Search, SlidersHorizontal, X } from "lucide-react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+
 
 export default function CategoryPage() {
   const { slug } = useParams();
@@ -17,6 +18,7 @@ export default function CategoryPage() {
   const [priceRange, setPriceRange] = useState(5000);
   const [search, setSearch] = useState("");
 
+  const [activeCategory, setActiveCategory] = useState("all");
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
 
   // ✅ LOAD WISHLIST
@@ -120,12 +122,16 @@ export default function CategoryPage() {
     }
   };
 
-  // 🔍 FILTER
   const filteredProducts = products
     .filter((p: any) =>
       p.name.toLowerCase().includes(search.toLowerCase())
     )
     .filter((p: any) => p.price <= priceRange)
+    .filter((p: any) =>
+      activeCategory === "all"
+        ? true
+        : p.category === activeCategory
+    )
     .sort((a: any, b: any) => {
       if (sortOption === "low") return a.price - b.price;
       if (sortOption === "high") return b.price - a.price;
@@ -139,8 +145,83 @@ export default function CategoryPage() {
         {slug}
       </h1>
 
+
+
+      <div className="sticky sm:top-[70px] top-[52px] z-40 bg-white/70 backdrop-blur-xl border-b border-gray-100">
+
+        <div className="px-4 sm:px-1.5 py-4">
+
+          {/* 🔥 FILTER BOX */}
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-4 sm:p-5">
+
+            {/* TOP ROW */}
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+
+              {/* 🔍 SEARCH */}
+              <div className="relative w-full lg:w-1/3">
+                <Search className="absolute left-4 top-3.5 w-4 h-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search luxury jewellery..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="w-full pl-11 pr-4 py-3 rounded-full border border-gray-200 bg-white shadow-sm focus:ring-2 focus:ring-black focus:border-black outline-none text-sm transition"
+                />
+              </div>
+
+              {/* 💰 PRICE */}
+              <div className="flex flex-col w-full lg:w-1/4">
+                <div className="flex justify-between text-xs text-gray-500 mb-1">
+                  <span>Price Range</span>
+                  <span className="font-medium text-black">₹{priceRange}</span>
+                </div>
+
+                <input
+                  type="range"
+                  min="100"
+                  max="5000"
+                  value={priceRange}
+                  onChange={(e) => setPriceRange(Number(e.target.value))}
+                  className="w-full accent-black cursor-pointer"
+                />
+              </div>
+
+              {/* 🔽 SORT */}
+              <div className="w-full lg:w-1/5">
+                <select
+                  value={sortOption}
+                  onChange={(e) => setSortOption(e.target.value)}
+                  className="w-full px-4 py-3 rounded-full border border-gray-200 bg-white shadow-sm text-sm focus:ring-2 focus:ring-black focus:border-black outline-none transition"
+                >
+                  <option value="">Sort by</option>
+                  <option value="low">Price: Low → High</option>
+                  <option value="high">Price: High → Low</option>
+                </select>
+              </div>
+
+              {/* 🔄 RESET FILTER */}
+              <button
+                onClick={() => {
+                  setSearch("");
+                  setPriceRange(5000);
+                  setSortOption("");
+                  setActiveCategory("all");
+                }}
+                className="w-full lg:w-auto px-4 py-3 rounded-full border border-gray-200 bg-white text-sm font-medium shadow-sm hover:bg-black hover:text-white transition flex items-center justify-center gap-2"
+              >
+                <X className="w-4 h-4" />
+                Reset Filters
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
       {/* PRODUCTS */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
         {filteredProducts.map((p: any) => (
           <div
@@ -149,11 +230,10 @@ export default function CategoryPage() {
               if (p.stock === 0) return;
               router.push(`/product/${p._id}`);
             }}
-            className={`relative bg-white rounded-xl p-3 shadow transition ${
-              p.stock === 0
-                ? "cursor-not-allowed"
-                : "hover:shadow-lg cursor-pointer"
-            }`}
+            className={`relative bg-white rounded-xl p-3 shadow transition ${p.stock === 0
+              ? "cursor-not-allowed"
+              : "hover:shadow-lg cursor-pointer"
+              }`}
           >
 
             {/* IMAGE CLICK → POPUP */}
@@ -173,9 +253,8 @@ export default function CategoryPage() {
 
               <img
                 src={p.images?.[0] || p.image}
-                className={`h-80 w-full object-cover rounded-lg ${
-                  p.stock === 0 ? "opacity-50" : ""
-                }`}
+                className={`h-80 w-full object-cover rounded-lg ${p.stock === 0 ? "opacity-50" : ""
+                  }`}
               />
             </div>
 
@@ -189,11 +268,10 @@ export default function CategoryPage() {
                 addToCart(p);
               }}
               disabled={p.stock === 0}
-              className={`w-full mt-3 py-2 rounded-lg ${
-                p.stock === 0
-                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                  : "bg-black text-white"
-              }`}
+              className={`w-full mt-3 py-2 rounded-lg ${p.stock === 0
+                ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                : "bg-black text-white"
+                }`}
             >
               {p.stock === 0 ? "Sold Out" : "Add to Cart"}
             </button>
@@ -207,11 +285,10 @@ export default function CategoryPage() {
               className="absolute top-2 right-2 bg-white p-2 rounded-full shadow"
             >
               <Heart
-                className={`w-5 h-5 transition ${
-                  wishlistIds.includes(String(p._id))
-                    ? "fill-red-500 text-red-500"
-                    : "text-gray-400"
-                }`}
+                className={`w-5 h-5 transition ${wishlistIds.includes(String(p._id))
+                  ? "fill-red-500 text-red-500"
+                  : "text-gray-400"
+                  }`}
               />
             </button>
 
@@ -262,11 +339,10 @@ export default function CategoryPage() {
                 <button
                   onClick={() => addToCart(selectedProduct)}
                   disabled={selectedProduct.stock === 0}
-                  className={`mt-5 w-full py-3 rounded-xl ${
-                    selectedProduct.stock === 0
-                      ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                      : "bg-black text-white"
-                  }`}
+                  className={`mt-5 w-full py-3 rounded-xl ${selectedProduct.stock === 0
+                    ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                    : "bg-black text-white"
+                    }`}
                 >
                   {selectedProduct.stock === 0 ? "Sold Out" : "Add to Cart"}
                 </button>
