@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Heart, Search } from "lucide-react";
+import { Heart } from "lucide-react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
@@ -16,14 +16,10 @@ export default function CategoryPage() {
   const [sortOption, setSortOption] = useState("");
   const [priceRange, setPriceRange] = useState(5000);
   const [search, setSearch] = useState("");
-  const [activeCategory, setActiveCategory] = useState("all");
 
-  // 🔥 IMPORTANT
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
 
-  // =========================
-  // ✅ LOAD WISHLIST FROM DB
-  // =========================
+  // ✅ LOAD WISHLIST
   const loadWishlist = async () => {
     const user = JSON.parse(localStorage.getItem("user") || "null");
     if (!user?.phone) return;
@@ -31,22 +27,18 @@ export default function CategoryPage() {
     const res = await fetch(`/api/wishlist?phone=${user.phone}`);
     const data = await res.json();
 
-    setWishlistIds(data.map((item: any) => item._id));
+    setWishlistIds(data.map((item: any) => String(item._id)));
   };
 
   useEffect(() => {
     loadWishlist();
-
     window.addEventListener("wishlistUpdated", loadWishlist);
-
     return () => {
       window.removeEventListener("wishlistUpdated", loadWishlist);
     };
   }, []);
 
-  // =========================
   // 🔥 FETCH PRODUCTS
-  // =========================
   useEffect(() => {
     fetch("/api/products")
       .then(res => res.json())
@@ -56,9 +48,7 @@ export default function CategoryPage() {
       });
   }, [slug]);
 
-  // =========================
   // 🛒 ADD TO CART
-  // =========================
   const addToCart = (product: any) => {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
@@ -87,9 +77,7 @@ export default function CategoryPage() {
     toast.success("Added to cart");
   };
 
-  // =========================
-  // ❤️ FINAL TOGGLE WISHLIST
-  // =========================
+  // ❤️ TOGGLE WISHLIST
   const toggleWishlist = async (product: any) => {
     const user = JSON.parse(localStorage.getItem("user") || "null");
 
@@ -117,13 +105,9 @@ export default function CategoryPage() {
 
       const data = await res.json();
 
-      // ✅ UPDATE IDS (IMPORTANT FOR RED HEART)
-      setWishlistIds(data.map((item: any) => item._id));
-
-      // ✅ HEADER UPDATE
+      setWishlistIds(data.map((item: any) => String(item._id)));
       window.dispatchEvent(new Event("wishlistUpdated"));
 
-      // ✅ TOAST
       const exists = data.find((item: any) => item._id === product._id);
 
       toast.success(
@@ -136,9 +120,7 @@ export default function CategoryPage() {
     }
   };
 
-  // =========================
   // 🔍 FILTER
-  // =========================
   const filteredProducts = products
     .filter((p: any) =>
       p.name.toLowerCase().includes(search.toLowerCase())
@@ -163,14 +145,39 @@ export default function CategoryPage() {
         {filteredProducts.map((p: any) => (
           <div
             key={p._id}
-            onClick={() => router.push(`/product/${p._id}`)}
-            className="relative bg-white rounded-xl p-3 shadow hover:shadow-lg cursor-pointer"
+            onClick={() => {
+              if (p.stock === 0) return;
+              router.push(`/product/${p._id}`);
+            }}
+            className={`relative bg-white rounded-xl p-3 shadow transition ${
+              p.stock === 0
+                ? "cursor-not-allowed"
+                : "hover:shadow-lg cursor-pointer"
+            }`}
           >
 
-            <img
-              src={p.images?.[0] || p.image}
-              className="h-80 w-full object-cover rounded-lg"
-            />
+            {/* IMAGE CLICK → POPUP */}
+            <div
+              className="relative"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedProduct(p);
+                setCurrentImage(0);
+              }}
+            >
+              {p.stock === 0 && (
+                <div className="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded z-10">
+                  SOLD OUT
+                </div>
+              )}
+
+              <img
+                src={p.images?.[0] || p.image}
+                className={`h-80 w-full object-cover rounded-lg ${
+                  p.stock === 0 ? "opacity-50" : ""
+                }`}
+              />
+            </div>
 
             <h2 className="mt-3 text-sm font-medium">{p.name}</h2>
             <p className="text-gray-500">₹{p.price}</p>
@@ -178,11 +185,17 @@ export default function CategoryPage() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
+                if (p.stock === 0) return;
                 addToCart(p);
               }}
-              className="w-full mt-3 py-2 bg-black text-white rounded-lg"
+              disabled={p.stock === 0}
+              className={`w-full mt-3 py-2 rounded-lg ${
+                p.stock === 0
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-black text-white"
+              }`}
             >
-              Add to Cart
+              {p.stock === 0 ? "Sold Out" : "Add to Cart"}
             </button>
 
             {/* ❤️ HEART */}
@@ -195,7 +208,7 @@ export default function CategoryPage() {
             >
               <Heart
                 className={`w-5 h-5 transition ${
-                  wishlistIds.includes(p._id)
+                  wishlistIds.includes(String(p._id))
                     ? "fill-red-500 text-red-500"
                     : "text-gray-400"
                 }`}
@@ -206,6 +219,73 @@ export default function CategoryPage() {
         ))}
 
       </div>
+
+      {/* 🔥 POPUP */}
+      {selectedProduct && (
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]"
+          onClick={() => setSelectedProduct(null)}
+        >
+          <div
+            className="bg-white rounded-2xl p-6 w-[90%] max-w-3xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="absolute top-3 right-4 text-xl"
+            >
+              ✖
+            </button>
+
+            <div className="grid md:grid-cols-2 gap-6">
+
+              <div>
+                <img
+                  src={
+                    selectedProduct.images?.[currentImage] ||
+                    selectedProduct.image
+                  }
+                  className="w-full h-96 object-cover rounded-xl"
+                />
+              </div>
+
+              <div>
+                <h2 className="text-xl font-semibold">
+                  {selectedProduct.name}
+                </h2>
+
+                <p className="text-gray-600 mt-2">
+                  ₹{selectedProduct.price}
+                </p>
+
+                <button
+                  onClick={() => addToCart(selectedProduct)}
+                  disabled={selectedProduct.stock === 0}
+                  className={`mt-5 w-full py-3 rounded-xl ${
+                    selectedProduct.stock === 0
+                      ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                      : "bg-black text-white"
+                  }`}
+                >
+                  {selectedProduct.stock === 0 ? "Sold Out" : "Add to Cart"}
+                </button>
+
+                <button
+                  onClick={() => toggleWishlist(selectedProduct)}
+                  className="mt-3 w-full py-3 border rounded-xl"
+                >
+                  {wishlistIds.includes(String(selectedProduct._id))
+                    ? "Remove from Wishlist ❤️"
+                    : "Add to Wishlist 🤍"}
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

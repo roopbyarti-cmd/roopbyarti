@@ -16,7 +16,7 @@ export default function Home() {
 
   const router = useRouter();
 
-  // ✅ LOAD WISHLIST FROM DB (IMPORTANT FIX)
+  // ✅ LOAD WISHLIST
   const loadWishlist = async () => {
     const user = JSON.parse(localStorage.getItem("user") || "null");
     if (!user?.phone) return;
@@ -30,7 +30,6 @@ export default function Home() {
   useEffect(() => {
     loadWishlist();
 
-    // 🔁 header sync
     window.addEventListener("wishlistUpdated", loadWishlist);
 
     return () => {
@@ -80,7 +79,7 @@ export default function Home() {
     toast.success("Added to cart");
   };
 
-  // ❤️ FINAL FIXED TOGGLE
+  // ❤️ WISHLIST
   const toggleWishlist = async (product: any) => {
     const user = JSON.parse(localStorage.getItem("user") || "null");
 
@@ -108,14 +107,11 @@ export default function Home() {
 
       const data = await res.json();
 
-      // ✅ FIX: update IDs instantly
       const ids = data.map((item: any) => String(item._id));
       setWishlistIds(ids);
 
-      // ✅ header update
       window.dispatchEvent(new Event("wishlistUpdated"));
 
-      // ✅ toast
       if (ids.includes(String(product._id))) {
         toast.success("Added to wishlist ❤️");
       } else {
@@ -146,9 +142,27 @@ export default function Home() {
         {products.map((p: any) => (
           <div
             key={p._id}
-            onClick={() => router.push(`/product/${p._id}`)}
-            className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group relative p-1.5"
+            onClick={() => {
+              if (p.stock === 0) {
+                setSelectedProduct(p);
+                setCurrentImage(0);
+                return;
+              }
+              router.push(`/product/${p._id}`);
+            }}
+            className={`bg-white rounded-2xl overflow-hidden shadow-sm transition group relative p-1.5 ${
+              p.stock === 0
+                ? "cursor-not-allowed"
+                : "hover:shadow-xl cursor-pointer"
+            }`}
           >
+
+            {/* SOLD OUT TAG */}
+            {p.stock === 0 && (
+              <div className="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded z-10">
+                SOLD OUT
+              </div>
+            )}
 
             {/* IMAGE */}
             <img
@@ -159,7 +173,9 @@ export default function Home() {
                     : p.image) || "/no-image.png"
                 )
               }
-              className="h-80 w-full object-cover rounded-xl"
+              className={`h-80 w-full object-cover rounded-xl ${
+                p.stock === 0 ? "opacity-50" : ""
+              }`}
             />
 
             {/* CONTENT */}
@@ -175,14 +191,20 @@ export default function Home() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
+                if (p.stock === 0) return;
                 addToCart(p);
               }}
-              className="w-full mt-4 py-2.5 rounded-xl bg-black text-white text-sm"
+              disabled={p.stock === 0}
+              className={`w-full mt-4 py-2.5 rounded-xl text-sm ${
+                p.stock === 0
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-black text-white"
+              }`}
             >
-              Add to Cart
+              {p.stock === 0 ? "Sold Out" : "Add to Cart"}
             </button>
 
-            {/* ❤️ HEART FIXED */}
+            {/* ❤️ HEART */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -202,6 +224,75 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      {/* 🔥 POPUP */}
+      {selectedProduct && (
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+          onClick={() => setSelectedProduct(null)}
+        >
+          <div
+            className="bg-white rounded-2xl p-6 w-[90%] max-w-3xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="absolute top-3 right-4 text-xl"
+            >
+              ✖
+            </button>
+
+            <div className="grid md:grid-cols-2 gap-6">
+
+              <div>
+                <img
+                  src={
+                    selectedProduct.images?.[currentImage] ||
+                    selectedProduct.image
+                  }
+                  className="w-full h-96 object-cover rounded-xl"
+                />
+              </div>
+
+              <div>
+                <h2 className="text-xl font-semibold">
+                  {selectedProduct.name}
+                </h2>
+
+                <p className="text-gray-600 mt-2">
+                  ₹{selectedProduct.price}
+                </p>
+
+                <button
+                  disabled={selectedProduct.stock === 0}
+                  className={`mt-4 w-full py-3 rounded-xl ${
+                    selectedProduct.stock === 0
+                      ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                      : "bg-black text-white"
+                  }`}
+                >
+                  {selectedProduct.stock === 0 ? "Sold Out" : "Add to Cart"}
+                </button>
+
+                {/* ❤️ POPUP HEART */}
+                <button
+                  onClick={() => toggleWishlist(selectedProduct)}
+                  className="mt-3"
+                >
+                  <Heart
+                    className={`w-6 h-6 ${
+                      wishlistIds.includes(String(selectedProduct._id))
+                        ? "fill-red-500 text-red-500"
+                        : "text-gray-400"
+                    }`}
+                  />
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <TrustedCustomer />
       <VideoSection />
