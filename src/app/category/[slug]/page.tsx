@@ -318,14 +318,34 @@ export default function CategoryPage() {
             <div className="grid md:grid-cols-2 gap-6">
 
               <div>
-                <img
-                  src={
-                    selectedProduct.images?.[currentImage] ||
-                    selectedProduct.image
-                  }
-                  className="w-full h-96 object-cover rounded-xl"
-                />
-              </div>
+  {/* MAIN IMAGE */}
+  <img
+    src={
+      selectedProduct.images?.[currentImage] ||
+      selectedProduct.image
+    }
+    className="w-full h-96 object-cover rounded-xl"
+  />
+
+  {/* 🔥 THUMBNAIL SLIDER */}
+  <div className="flex gap-2 mt-3 overflow-x-auto">
+    {(selectedProduct.images?.length
+      ? selectedProduct.images
+      : [selectedProduct.image]
+    ).map((img: string, i: number) => (
+      <img
+        key={i}
+        src={img}
+        onClick={() => setCurrentImage(i)}
+        className={`h-16 w-16 object-cover rounded-lg cursor-pointer border ${
+          currentImage === i
+            ? "border-black"
+            : "border-gray-200"
+        }`}
+      />
+    ))}
+  </div>
+</div>
 
               <div>
                 <h2 className="text-xl font-semibold">

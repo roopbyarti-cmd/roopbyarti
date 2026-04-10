@@ -11,6 +11,7 @@ export default function ProductDetail() {
 
   const [product, setProduct] = useState<any>(null);
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
+  const [currentImage, setCurrentImage] = useState(0); // ✅ FIX ADDED
 
   // ✅ LOAD PRODUCT + WISHLIST
   useEffect(() => {
@@ -20,7 +21,6 @@ export default function ProductDetail() {
       .then(res => res.json())
       .then(data => setProduct(data));
 
-    // 🔥 FIX: LOAD FROM DB (NOT localStorage)
     const loadWishlist = async () => {
       const user = JSON.parse(localStorage.getItem("user") || "null");
       if (!user?.phone) return;
@@ -28,7 +28,7 @@ export default function ProductDetail() {
       const res = await fetch(`/api/wishlist?phone=${user.phone}`);
       const data = await res.json();
 
-      setWishlistIds(data.map((item: any) => item._id));
+      setWishlistIds(data.map((item: any) => String(item._id)));
     };
 
     loadWishlist();
@@ -57,7 +57,7 @@ export default function ProductDetail() {
     toast.success("Added to cart");
   };
 
-  // ❤️ FINAL FIXED TOGGLE
+  // ❤️ TOGGLE WISHLIST
   const toggleWishlist = async (product: any) => {
     const user = JSON.parse(localStorage.getItem("user") || "null");
 
@@ -85,10 +85,8 @@ export default function ProductDetail() {
 
       const data = await res.json();
 
-      // ✅ HEART COLOR FIX
-      setWishlistIds(data.map((item: any) => item._id));
+      setWishlistIds(data.map((item: any) => String(item._id)));
 
-      // ✅ HEADER COUNT UPDATE
       window.dispatchEvent(new Event("wishlistUpdated"));
 
       const exists = data.find((item: any) => item._id === product._id);
@@ -112,10 +110,33 @@ export default function ProductDetail() {
 
       {/* LEFT IMAGE */}
       <div>
+        {/* MAIN IMAGE */}
         <img
-          src={product.images?.[0] || product.image}
-          className="w-full h-[500px] object-cover rounded-xl"
+          src={
+            product.images?.[currentImage] ||
+            product.image
+          }
+          className="w-full h-96 object-cover rounded-xl"
         />
+
+        {/* 🔥 THUMBNAIL SLIDER */}
+        <div className="flex gap-2 mt-3 overflow-x-auto">
+          {(product.images?.length
+            ? product.images
+            : [product.image]
+          ).map((img: string, i: number) => (
+            <img
+              key={i}
+              src={img}
+              onClick={() => setCurrentImage(i)}
+              className={`h-16 w-16 object-cover rounded-lg cursor-pointer border ${
+                currentImage === i
+                  ? "border-black"
+                  : "border-gray-200"
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* RIGHT INFO */}
