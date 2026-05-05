@@ -128,7 +128,7 @@ export default function Home() {
     <div>
       {/* Banner */}
       <div className="banner-roop">
-        <img src="/roop-by-arti-banner.png" />
+        <img src="/roop-by-arti-banner-mothers-day.png" />
       </div>
 
       <ExploreCategories />

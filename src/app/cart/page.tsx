@@ -80,13 +80,34 @@ const increaseQty = (i: number) => {
 
   // 🎟️ APPLY COUPON
   const applyCoupon = () => {
-    if (coupon === "ROOP10") {
-      setDiscount(subtotal * 0.1);
-      toast.success("Coupon applied 🎉");
-    } else {
-      toast.error("Invalid coupon ❌");
+  if (coupon.toLowerCase() === "mothersday10") {
+
+    const today = new Date();
+    const expiry = new Date("2026-05-10");
+
+    if (today > expiry) {
+      toast.error("Coupon expired ❌");
+      return;
     }
-  };
+
+    const discountAmount = subtotal * 0.1;
+
+    setDiscount(discountAmount);
+
+    // ✅ SAVE IN LOCAL STORAGE
+    localStorage.setItem(
+      "coupon",
+      JSON.stringify({
+        code: "MOTHERSDAY10",
+        discount: discountAmount,
+      })
+    );
+
+    toast.success("10% OFF applied 🎉");
+  } else {
+    toast.error("Invalid coupon ❌");
+  }
+};
 
   return (
     <div className="min-h-screen bg-gray-50 px-4 sm:px-10 py-8">
@@ -182,7 +203,7 @@ const increaseQty = (i: number) => {
             <h2 className="font-semibold text-lg mb-4">Order Summary</h2>
 
             {/* Coupon */}
-            {/* <div className="flex gap-2 mb-4">
+            <div className="flex gap-2 mb-4">
               <div className="flex items-center border rounded-lg px-2 flex-1">
                 <Tag size={14} className="text-gray-400 mr-2" />
                 <input
@@ -199,7 +220,7 @@ const increaseQty = (i: number) => {
               >
                 Apply
               </button>
-            </div> */}
+            </div>
 
             {/* Price */}
             <div className="space-y-2 text-sm">

@@ -45,26 +45,35 @@ export default function Checkout() {
   const [orderId, setOrderId] = useState("");
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [phone, setPhone] = useState("");
-  // Add these lines below your subtotal calculation
-  const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-  const shipping = subtotal > 999 ? 0 : 99;  // 👈 added shipping logic
-  const total = subtotal + shipping;          // 👈 include shipping in total
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [address, setAddress] = useState("");
+const [phone, setPhone] = useState("");
+const [discount, setDiscount] = useState(0);
+const [showQR, setShowQR] = useState(false);
+const [utr, setUtr] = useState("");
 
-  const [showQR, setShowQR] = useState(false);
-  const [utr, setUtr] = useState("");
+const ADMIN_PHONE = "918882640032"; // 👈 apna number (without +)
+const upiId = "9650758474@ptyes"; // 👈 apni UPI ID daalo
+const upiName = "Roop by Arti"; // 👈 business name
 
-  const ADMIN_PHONE = "919650758474"; // 👈 apna number (without +)
-  const upiId = "9650758474@ptyes"; // 👈 apni UPI ID daalo
-  const upiName = "Roop by Arti"; // 👈 business name
+// Add these lines below your subtotal calculation
+const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+const shipping = subtotal > 999 ? 0 : 99;  // 👈 added shipping logic
+//const total = subtotal + shipping;          // 👈 include shipping in total
+const total = subtotal - discount + shipping;
 
-  const upiLink = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
-    upiName
-  )}&am=${total}&cu=INR`;
+const upiLink = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
+  upiName
+)}&am=${total}&cu=INR`;
 
+useEffect(() => {
+  const savedCoupon = JSON.parse(localStorage.getItem("coupon") || "null");
+
+  if (savedCoupon?.discount) {
+    setDiscount(savedCoupon.discount);
+  }
+}, []);
 
   useEffect(() => {
     const key = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
@@ -168,6 +177,7 @@ export default function Checkout() {
 
     setOrderId(generatedOrderId);
     setOrderPlaced(true);
+    localStorage.removeItem("coupon");
   };
   if (orderPlaced) {
     return (
@@ -224,10 +234,28 @@ export default function Checkout() {
           </p>
         ))}
       </div>
+{discount > 0 && (
+  <p className="text-green-600 text-center mb-2 text-sm font-medium">
+    🎉 MOTHERSDAY10 applied (10% OFF) - You saved ₹{discount}
+  </p>
+)}
+     <div className="text-center mb-4">
+  <p className="text-sm text-gray-500">Subtotal: ₹{subtotal}</p>
 
-      <h2 className="font-bold text-lg mb-4 text-center">
-        Total: ₹{total} {shipping > 0 && `(including ₹${shipping} shipping)`}
-      </h2>
+  {discount > 0 && (
+    <p className="text-green-600 text-sm">
+      Discount: -₹{discount}
+    </p>
+  )}
+
+  <p className="text-sm text-gray-500">
+    Shipping: {shipping === 0 ? "Free" : `₹${shipping}`}
+  </p>
+
+  <h2 className="font-bold text-lg mt-2">
+    Total: ₹{total}
+  </h2>
+</div>
 
       {/* FORM */}
       <div className="space-y-3">
