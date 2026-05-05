@@ -170,6 +170,7 @@ export default function Wishlist() {
                   className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:scale-110 transition group cursor-pointer"
                 >
                   <Trash2 className="w-4 h-4 text-black group-hover:text-red-500 transition" />
+                  
                 </button>
               </div>
             </div>
